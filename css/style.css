@@ -702,6 +702,145 @@ h6 {
 
 /*** Service End ***/
 
+/*** Circular Services Start ***/
+.services-circular {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.services-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.services-center img {
+    max-width: 180px;
+    width: 100%;
+    height: auto;
+}
+
+.services-ring {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+}
+
+.service-circle-item {
+    position: absolute;
+    width: 160px;
+    transition: all 0.3s ease;
+}
+
+.service-circle-item:hover {
+    transform: scale(1.05);
+    z-index: 20;
+}
+
+.service-circle-item .service-item {
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.service-circle-item:hover .service-item {
+    box-shadow: 0 0 40px rgba(233, 30, 99, 0.3);
+}
+
+.service-circle-item .service-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #e91e63;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+}
+
+.service-circle-item .service-icon i {
+    font-size: 22px;
+    color: #fff;
+}
+
+.service-circle-item .service-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+
+.service-circle-item .service-title:hover {
+    color: #e91e63;
+}
+
+.service-circle-item .service-desc {
+    font-size: 11px;
+    color: #666;
+    line-height: 1.4;
+    margin: 0;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .services-circular {
+        max-width: 500px;
+    }
+
+    .services-center img {
+        max-width: 140px;
+    }
+
+    .service-circle-item {
+        width: 130px;
+    }
+}
+
+@media (max-width: 767px) {
+    .services-circular {
+        max-width: 350px;
+    }
+
+    .services-center img {
+        max-width: 100px;
+    }
+
+    .service-circle-item {
+        width: 110px;
+    }
+
+    .service-circle-item .service-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .service-circle-item .service-icon i {
+        font-size: 18px;
+    }
+
+    .service-circle-item .service-title {
+        font-size: 12px;
+    }
+
+    .service-circle-item .service-desc {
+        font-size: 10px;
+    }
+}
+
+/*** Circular Services End ***/
+
 
 /*** Counter Start ***/
 .counter {
