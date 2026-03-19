@@ -264,12 +264,24 @@
     <div class="container-fluid product bg-light ">
         <div class="container py-5">
 
-                 <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                <h4 class="text-uppercase text-primary">Our Trainings</h4>
-                <h4 class="text-capitalize mb-3">What Our Academic Community Says</h4>
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 text-lg-start">
+                        <h4 class="text-uppercase text-primary">Our Trainings</h4>
+                    </div>
+                    <div class="col-lg-6 text-lg-end">
+                        <div class="course-filters">
+                            <button class="btn btn-primary active" data-filter="all">All</button>
+                            <button class="btn btn-outline-primary" data-filter="water">Water Systems</button>
+                            <button class="btn btn-outline-primary" data-filter="filtration">Filtration</button>
+                            <button class="btn btn-outline-primary" data-filter="quality">Quality Control</button>
+                            <button class="btn btn-outline-primary" data-filter="maintenance">Maintenance</button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="owl-carousel training-carousel wow fadeInUp" data-wow-delay="0.2s">
-                <div class="product-item">
+                <div class="product-item" data-category="water">
                     <img src="img/product-1.png" class="img-fluid w-100 rounded-top" alt="Image">
                     <div class="product-content bg-light text-center rounded-bottom p-2">
                         <p class="mb-1">AI Water Systems</p>
@@ -277,7 +289,7 @@
                         <p class="fs-6 text-primary mb-1">2m² | Jan 15, 2026</p>
                     </div>
                 </div>
-                <div class="product-item">
+                <div class="product-item" data-category="filtration">
                     <img src="img/product-1.png" class="img-fluid w-100 rounded-top" alt="Image">
                     <div class="product-content bg-light text-center rounded-bottom p-2">
                         <p class="mb-1">AI Filtration</p>
@@ -285,7 +297,7 @@
                         <p class="fs-6 text-primary mb-1">2m² | Feb 20, 2026</p>
                     </div>
                 </div>
-                <div class="product-item">
+                <div class="product-item" data-category="quality">
                     <img src="img/product-1.png" class="img-fluid w-100 rounded-top" alt="Image">
                     <div class="product-content bg-light text-center rounded-bottom p-2">
                         <p class="mb-1">AI Quality Control</p>
@@ -293,7 +305,7 @@
                         <p class="fs-6 text-primary mb-1">2m² | Mar 10, 2026</p>
                     </div>
                 </div>
-                <div class="product-item">
+                <div class="product-item" data-category="maintenance">
                     <img src="img/product-1.png" class="img-fluid w-100 rounded-top" alt="Image">
                     <div class="product-content bg-light text-center rounded-bottom p-2">
                         <p class="mb-1">AI Predictive Maint.</p>
@@ -301,7 +313,7 @@
                         <p class="fs-6 text-primary mb-1">2m² | Apr 5, 2026</p>
                     </div>
                 </div>
-                <div class="product-item">
+                <div class="product-item" data-category="water">
                     <img src="img/product-1.png" class="img-fluid w-100 rounded-top" alt="Image">
                     <div class="product-content bg-light text-center rounded-bottom p-2">
                         <p class="mb-1">AI Water Systems</p>
@@ -309,7 +321,7 @@
                         <p class="fs-6 text-primary mb-1">2m² | May 10, 2026</p>
                     </div>
                 </div>
-                <div class="product-item">
+                <div class="product-item" data-category="filtration">
                     <img src="img/product-1.png" class="img-fluid w-100 rounded-top" alt="Image">
                     <div class="product-content bg-light text-center rounded-bottom p-2">
                         <p class="mb-1">AI Filtration</p>
@@ -320,7 +332,7 @@
             </div>
         </div>
     </div>
-    <!-- Trainings End -->
+
 
     <!-- About Start -->
     <div class="container-fluid about overflow-hidden py-2">
@@ -482,7 +494,8 @@
                     <div class="bg-transparent service-center-logo mb-5">
                         <img src="img/logo.png" class="img-fluid" alt="Logo" style="max-width: 400px;">
                     </div>
-                    <a href="service.html" class="btn btn-primary rounded-pill d-inline-flex flex-shrink-0 py-2 px-4">View All</a>
+                    <a href="service.html"
+                        class="btn btn-primary rounded-pill d-inline-flex flex-shrink-0 py-2 px-4">View All</a>
                 </div>
                 <!-- Right Services -->
                 <div class="col-lg-4 wow fadeInRight" data-wow-delay="0.2s">
@@ -870,22 +883,22 @@
                         Researchers and students can now collaborate internationally, access
                         digital libraries, and participate in global academic networks without interruption.
                     </p>
-                
+
                     <div class="d-block">
                         <h4 class="text-dark">Dr. Amina Hassan</h4>
                         <p class="m-0 pb-3">ICT Director – University of Dar es Salaam</p>
-                        </div>
+                    </div>
                 </div>
                 <div class="testimonial-item text-center p-4">
                     <p>Through TERNET’s high-speed network infrastructure, our research teams
                         are able to share large datasets and collaborate with global partners
                         more efficiently than ever before.
                     </p>
-                
+
                     <div class="d-block">
                         <h4 class="text-dark">Prof. Joseph Mwangi</h4>
                         <p class="m-0 pb-3">Research Scientist</p>
-                      
+
                     </div>
                 </div>
                 <div class="testimonial-item text-center p-4">
@@ -893,11 +906,11 @@
                         much easier. We can attend online lectures, access research materials,
                         and collaborate with students worldwide.
                     </p>
-                  
+
                     <div class="d-block">
                         <h4 class="text-dark">Neema Mushi</h4>
                         <p class="m-0 pb-3">Postgraduate Student</p>
-                       
+
                     </div>
                 </div>
                 <div class="testimonial-item text-center p-4">
@@ -905,7 +918,7 @@
                         research and education ecosystem by providing secure and reliable
                         digital infrastructure for academic institutions.
                     </p>
-                   
+
                     <div class="d-block">
                         <h4 class="text-dark">Eng. Daniel Nyerere</h4>
                         <p class="m-0 pb-3">Network Infrastructure Manager</p>
