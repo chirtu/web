@@ -73,9 +73,9 @@
         <!-- Combined Sticky Navbar Wrapper -->
         <div class="sticky-top">
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0 bg-white">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
                 <a href="" class="navbar-brand p-0">
-                    <img src="img/logo.png" alt="Logo">
+                    <img src="img/logo.png" alt="Logo" class="img-fluid" style="max-height: 50px;">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
@@ -112,34 +112,9 @@
                                             <span>International Appointments</span>
                                         </a>
                                     </div>
-                                    <!-- <div class="col-sm-5">
-                                        <h6 class="mega-title">Leadership</h6>
-                                        <a href="team.html" class="dropdown-item">
-                                            <span>CEO</span>
-                                        </a>
-                                        <a href="about.html" class="dropdown-item">
-                                            <span>Our Mission</span>
-                                        </a>
-                                        <a href="about.html" class="dropdown-item">
-                                            <span>Our Vision</span>
-                                        </a>
-                                    </div> -->
-                                    <!-- <div class="col-lg-4">
-                                        <h6 class="mega-title">Members</h6>
-                                        <a href="team.html" class="dropdown-item">
-                                            <span>Our Members</span>
-                                        </a>
-                                        <a href="team.html" class="dropdown-item">
-                                            <span>Join Us</span>
-                                        </a>
-                                        <a href="contact.html" class="dropdown-item">
-                                            <span>Contact</span>
-                                        </a>
-                                    </div> -->
-                                </div>
+                               </div>
                             </div>
                         </div>
-                        <!-- <a href="service.html" class="nav-item nav-link text-primary">Services</a> -->
                         <div class="nav-item dropdown mega-dropdown">
 
                             <a href="#" class="nav-link dropdown-toggle text-primary" data-bs-toggle="dropdown">
@@ -271,11 +246,12 @@
                     </div>
                     <div class="col-lg-6 text-lg-end">
                         <div class="course-filters">
-                            <button class="btn btn-primary active" data-filter="all">All</button>
-                            <button class="btn btn-outline-primary" data-filter="water">Water Systems</button>
-                            <button class="btn btn-outline-primary" data-filter="filtration">Filtration</button>
-                            <button class="btn btn-outline-primary" data-filter="quality">Quality Control</button>
-                            <button class="btn btn-outline-primary" data-filter="maintenance">Maintenance</button>
+                            <button class="btn btn-outline-primary me-2" id="prevFilter" title="Previous">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="btn btn-outline-primary ms-2" id="nextFilter" title="Next">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -1037,9 +1013,7 @@
                         </a>, All right reserved.
                     </span>
                 </div>
-                <div class="col-md-6 text-center text-md-end text-body">
-                    Designed By <a class="border-bottom text-white" href="https://ternet.or.tz">TERNET</a>
-                </div>
+             
             </div>
         </div>
     </div>

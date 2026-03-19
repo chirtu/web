@@ -1,470 +1,654 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <title>TERNET - </title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="" name="description">
+<head>
+    <meta charset="utf-8">
+    <title>TERNET - </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
-        <!-- Google Web Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"> 
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
 
-        <!-- Icon Font Stylesheet -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-        <!-- Libraries Stylesheet -->
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
 
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
 
-    <body>
+<body>
 
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Top Navbar Start -->
+    <div class="container-fluid bg-topnavbar text-white pt-2 pb-2">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+
+                <div class="d-flex gap-4">
+                    <a href="tel:+255612345678" class="text-white text-decoration-none d-flex align-items-center gap-2">
+                        <span>[255] 738 353 995</span>
+                    </a>
+                    <a href="mailto:info@ternet.co.tz"
+                        class="text-white text-decoration-none d-flex align-items-center gap-2">
+                        <span>info@ternet.co.tz</span>
+                    </a>
+                </div>
+                <!-- Right Side: Social Icons -->
+                <div class="d-flex gap-3">
+                    <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                </div>
             </div>
         </div>
-        <!-- Spinner End -->
+    </div>
+    <!-- Top Navbar End -->
 
-        <!-- Navbar & Hero Start -->
-        <div class="container-fluid position-relative p-0">
-            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+        <!-- Combined Sticky Navbar Wrapper -->
+        <div class="sticky-top">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
                 <a href="" class="navbar-brand p-0">
-                    <h1 class="text-primary"><i class="fas fa-hand-holding-water me-3"></i>TERNET</h1>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                    <img src="img/logo.png" alt="Logo" class="img-fluid" style="max-height: 50px;">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link active">Service</a>
-                        <a href="blog.html" class="nav-item nav-link">Blog</a>
+                        <a href="index.html" class="nav-item nav-link active text-primary">Home</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="feature.html" class="dropdown-item">Our Feature</a>
-                                <a href="product.html" class="dropdown-item">Our Product</a>
-                                <a href="team.html" class="dropdown-item">Our Team</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                <a href="404.html" class="dropdown-item">404 Page</a>
+                            <a href="#" class="nav-link dropdown-toggle text-primary" data-bs-toggle="dropdown">Explore
+                                Us</a>
+                            <div class="dropdown-menu mega-menu p-4" style="min-width: 400px;">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <h6 class="mega-title">About TERNET</h6>
+                                        <a href="about.html" class="dropdown-item">
+                                            <span>About Us</span>
+                                        </a>
+                                        <!-- <a href="team.html" class="dropdown-item">
+                                            <span>Our Team</span>
+                                        </a> -->
+                                        <a href="team.html" class="dropdown-item">
+                                            <span>Message from CEO</span>
+                                        </a>
+                                        <a href="team.html" class="dropdown-item">
+                                            <span>Vission, Mission and Core Values</span>
+                                        </a>
+                                        <a href="team.html" class="dropdown-item">
+                                            <span>Leadership And Management</span>
+                                        </a>
+                                        <a href="team.html" class="dropdown-item">
+                                            <span>Award and Achievements</span>
+                                        </a>
+                                        <a href="team.html" class="dropdown-item">
+                                            <span>International Appointments</span>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <div class="nav-item dropdown mega-dropdown">
+
+                            <a href="#" class="nav-link dropdown-toggle text-primary" data-bs-toggle="dropdown">
+                                Services</a>
+                            <div class="dropdown-menu mega-menu p-4">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h6 class="mega-title">Our Services</h6>
+                                        <a href="service.html" class="mega-item">
+                                            <span>Services</span>
+                                        </a>
+                                        <a href="service.html" class="mega-item">
+                                            <!-- <i class="fas fa-chalkboard-teacher"></i> -->
+                                            <span>Trainings</span>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <a href="blog.html" class="nav-item nav-link text-primary">Events</a>
+                        <a href="contact.html" class="nav-item nav-link text-primary">Membership</a>
+
                     </div>
-                    <div class="d-none d-xl-flex me-3">
+                    <!-- <div class="d-none d-xl-flex me-3">
                         <div class="d-flex flex-column pe-3 border-end border-primary">
-                            <span class="text-body">Get Free Delivery</span>
+                            <span class="text-primary">Get Free Delivery</span>
                             <a href="tel:+4733378901"><span class="text-primary">Free: + 0123 456 7890</span></a>
                         </div>
-                    </div>
-                    <button class="btn btn-primary btn-md-square d-flex flex-shrink-0 mb-3 mb-lg-0 rounded-circle me-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
-                    <a href="" class="btn btn-primary rounded-pill d-inline-flex flex-shrink-0 py-2 px-4">Order Now</a>
+                    </div> -->
+                    <a href="" class="btn btn-primary rounded-pill d-inline-flex flex-shrink-0 py-2 px-4">Become a
+                        Member</a>
                 </div>
             </nav>
-
-            <!-- Header Start -->
-            <div class="container-fluid bg-breadcrumb">
-                <div class="container text-center py-5" style="max-width: 900px;">
-                    <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Our Services</h4>
-                    <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                        <li class="breadcrumb-item active text-primary">Service</li>
-                    </ol>    
-                </div>
-            </div>
-            <!-- Header End -->
         </div>
-        <!-- Navbar & Hero End -->
 
-        <!-- Modal Search Start -->
-        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content rounded-0">
-                    <div class="modal-header">
-                        <h4 class="modal-title mb-0" id="exampleModalLabel">Search by keyword</h4>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body d-flex align-items-center">
-                        <div class="input-group w-75 mx-auto d-flex">
-                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
-                            <span id="search-icon-1" class="input-group-text btn border p-3"><i class="fa fa-search text-white"></i></span>
-                        </div>
-                    </div>
-                </div>
+        <!-- Header Start -->
+        <div class="container-fluid bg-breadcrumb">
+            <div class="container text-center" style="max-width: 900px;">
+                <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Our Services</h4>
+                <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item active text-primary">Service</li>
+                </ol>
             </div>
         </div>
-        <!-- Modal Search End -->
+        <!-- Header End -->
+    </div>
+    <!-- Navbar & Hero End -->
 
-        <!-- Service Start -->
-        <div class="container-fluid service bg-light overflow-hidden py-5">
-            <div class="container py-5">
-                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                    <h4 class="text-uppercase text-primary">Our Service</h4>
-                    <h1 class="display-3 text-capitalize mb-3">Protect Your Family with Best Water</h1>
+    <!-- Fact Counter -->
+    <div class="container-fluid counter py-5">
+        <div class="container py-5">
+            <h4 class="text-white display-4 mb-4 wow fadeInDown text-center" data-wow-delay="0.1s">Our Services</h4>
+
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="counter-item">
+                        <div class="counter-item-icon mx-auto">
+                            <i class="fas fa-wifi fa-3x text-white"></i>
+                        </div>
+                        <h4 class="text-white my-4">Eduroam Sites</h4>
+                        <div class="counter-counting">
+                            <span class="text-white fs-2 fw-bold" data-toggle="counter-up">156</span>
+                            <span class="h1 fw-bold text-white">+</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="row gx-0 gy-4 align-items-center">
-                    <div class="col-lg-6 col-xl-4 wow fadeInLeft" data-wow-delay="0.2s">
-                        <div class="service-item rounded p-4 mb-4">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="d-flex">
-                                        <div class="service-content text-end">
-                                            <a href="#" class="h4 d-inline-block mb-3">Residential Waters</a>
-                                            <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas provident maiores quisquam.</p>
-                                        </div>
-                                        <div class="ps-4">
-                                            <div class="service-btn"><i class="fas fa-hand-holding-water text-white fa-2x"></i></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="counter-item">
+                        <div class="counter-item-icon mx-auto">
+                            <i class="fas fa-university fa-3x text-white"></i>
                         </div>
-                        <div class="service-item rounded p-4 mb-4">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="d-flex">
-                                        <div class="service-content text-end">
-                                            <a href="#" class="h4 d-inline-block mb-3">Commercial Waters</a>
-                                            <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas provident maiores quisquam.</p>
-                                        </div>
-                                        <div class="ps-4">
-                                            <div class="service-btn"><i class="fas fa-dumpster-fire text-white fa-2x"></i></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="service-item rounded p-4 mb-0">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="d-flex">
-                                        <div class="service-content text-end">
-                                            <a href="#" class="h4 d-inline-block mb-3">Filtration Plants</a>
-                                            <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas provident maiores quisquam.</p>
-                                        </div>
-                                        <div class="ps-4">
-                                            <div class="service-btn"><i class="fas fa-filter text-white fa-2x"></i></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <h4 class="text-white my-4">Connected Campuses</h4>
+                        <div class="counter-counting">
+                            <span class="text-white fs-2 fw-bold" data-toggle="counter-up">42</span>
+                            <span class="h1 fw-bold text-white">+</span>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="bg-transparent">
-                            <img src="img/water.png" class="img-fluid w-100" alt="">
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="counter-item">
+                        <div class="counter-item-icon mx-auto">
+                            <i class="fas fa-user-graduate fa-3x text-white"></i>
                         </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay="0.2s">
-                        <div class="service-item rounded p-4 mb-4">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="d-flex">
-                                        <div class="pe-4">
-                                            <div class="service-btn"><i class="fas fa-assistive-listening-systems text-white fa-2x"></i></div>
-                                        </div>
-                                        <div class="service-content">
-                                            <a href="#" class="h4 d-inline-block mb-3">Water Softening</a>
-                                            <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas provident maiores quisquam.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="service-item rounded p-4 mb-4">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="d-flex">
-                                        <div class="pe-4">
-                                            <div class="service-btn"><i class="fas fa-recycle text-white fa-2x"></i></div>
-                                        </div>
-                                        <div class="service-content">
-                                            <a href="#" class="h4 d-inline-block mb-3">Market Research</a>
-                                            <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas provident maiores quisquam.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="service-item rounded p-4 mb-0">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="d-flex">
-                                        <div class="pe-4">
-                                            <div class="service-btn"><i class="fas fa-project-diagram text-white fa-2x"></i></div>
-                                        </div>
-                                        <div class="service-content">
-                                            <a href="#" class="h4 d-inline-block mb-3">Project Planning</a>
-                                            <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas provident maiores quisquam.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <h4 class="text-white my-4">Trained Persons</h4>
+                        <div class="counter-counting">
+                            <span class="text-white fs-2 fw-bold" data-toggle="counter-up">2500</span>
+                            <span class="h1 fw-bold text-white">+</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Service End -->
+    </div>
+    <!-- Fact Counter -->
 
-        <!-- Fact Counter -->
-        <div class="container-fluid counter py-5">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="counter-item">
-                            <div class="counter-item-icon mx-auto">
-                                <i class="fas fa-thumbs-up fa-3x text-white"></i>
-                            </div>
-                            <h4 class="text-white my-4">Happy Clients</h4>
-                            <div class="counter-counting">
-                                <span class="text-white fs-2 fw-bold" data-toggle="counter-up">456</span>
-                                <span class="h1 fw-bold text-white">+</span>
-                            </div>
+    <!-- Service Start -->
+    <div class="container-fluid service bg-light overflow-hidden py-5">
+        <div class="container py-5">
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="service-card rounded h-100">
+                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Internet Connectivity">
+                        <div class="service-content bg-white p-4">
+                            <h4 class="mb-3">Internet Connectivity</h4>
+                            <p class="mb-0">Internet connectivity is the primary form of intervention to enable easy
+                                collaboration among education and research institutions.</p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="counter-item">
-                            <div class="counter-item-icon mx-auto">
-                                <i class="fas fa-truck fa-3x text-white"></i>
-                            </div>
-                            <h4 class="text-white my-4">Transport</h4>
-                            <div class="counter-counting">
-                                <span class="text-white fs-2 fw-bold" data-toggle="counter-up">513</span>
-                                <span class="h1 fw-bold text-white">+</span>
-                            </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-card rounded h-100">
+                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="eduroam">
+                        <div class="service-content bg-white p-4">
+                            <h4 class="mb-3">eduroam</h4>
+                            <p class="mb-0">eduroam provides simple, easy, secure connectivity from thousands of
+                                hotspots across more than 100 countries.</p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="counter-item">
-                            <div class="counter-item-icon mx-auto">
-                                <i class="fas fa-users fa-3x text-white"></i>
-                            </div>
-                            <h4 class="text-white my-4">Employees</h4>
-                            <div class="counter-counting">
-                                <span class="text-white fs-2 fw-bold" data-toggle="counter-up">53</span>
-                                <span class="h1 fw-bold text-white">+</span>
-                            </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="service-card rounded h-100">
+                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Metro eduroam">
+                        <div class="service-content bg-white p-4">
+                            <h4 class="mb-3">Metro eduroam</h4>
+                            <p class="mb-0">Metro eduroam simply means eduroam within the city, outside the campuses of
+                                institutions.</p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="counter-item">
-                            <div class="counter-item-icon mx-auto">
-                                <i class="fas fa-heart fa-3x text-white"></i>
-                            </div>
-                            <h4 class="text-white my-4">Years Experiance</h4>
-                            <div class="counter-counting">
-                                <span class="text-white fs-2 fw-bold" data-toggle="counter-up">17</span>
-                                <span class="h1 fw-bold text-white">+</span>
-                            </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="service-card rounded h-100">
+                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="eduroam on the Go">
+                        <div class="service-content bg-white p-4">
+                            <h4 class="mb-3">eduroam on the Go</h4>
+                            <p class="mb-0">eduroam on the Go is a pocket-size routing device specially made to enable
+                                researchers and university staff connect to eduroam and the Internet anytime, anywhere.
+                            </p>
                         </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-card rounded h-100">
+                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Zero-rated Mobile Access">
+                        <div class="service-content bg-white p-4">
+                            <h4 class="mb-3">Zero-rated Mobile Access</h4>
+                            <p class="mb-0">Students and staff from our member institutions don't need to load data
+                                bundles to access their websites, e-learning portals and all sites in the RENU domain.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="service-card rounded h-100">
+                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Moodle LMS">
+                        <div class="service-content bg-white p-4">
+                            <h4 class="mb-3">Moodle LMS</h4>
+                            <p class="mb-0">The Learning Management System (LMS) allows institutional administrators to
+                                create, organize, and manage various types of learning materials.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="service-card rounded h-100">
+                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Web Conferencing">
+                        <div class="service-content bg-white p-4">
+                            <h4 class="mb-3">Web Conferencing</h4>
+                            <p class="mb-0">RENU offers web conferencing as a service to enable education and research
+                                institutions to hold meetings, conferences, seminars and virtual classes wherever.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-card rounded h-100">
+                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="RENU Cloud">
+                        <div class="service-content bg-white p-4">
+                            <h4 class="mb-3">RENU Cloud</h4>
+                            <p class="mb-0">RENU Cloud is good for member institutions that wish to have offsite
+                                disaster recovery solutions without incurring the heavy costs of building offsite data
+                                centres and buying server hardware.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="service-card rounded h-100">
+                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Colocation">
+                        <div class="service-content bg-white p-4">
+                            <h4 class="mb-3">Colocation</h4>
+                            <p class="mb-0">Institutions are able to rent space in any of RENU’s data centers for their
+                                servers and other computing hardware. This facility could be used for safe storage,
+                                offsite backup, etc.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="service-card rounded h-100">
+                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Domain Registration">
+                        <div class="service-content bg-white p-4">
+                            <h4 class="mb-3">Domain Registration</h4>
+                            <p class="mb-0">Domain registration is the process of acquiring a unique Internet address
+                                for a website. This address, known as a domain name, serves as the online identity for a
+                                particular entity or institution.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-card rounded h-100">
+                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Domain Name Hosting">
+                        <div class="service-content bg-white p-4">
+                            <h4 class="mb-3">Domain Name Hosting</h4>
+                            <p class="mb-0">This is a free DNS hosting service that hosts registered institutional
+                                domains that can be used to create websites and email addresses from the safety,
+                                reliability and speed of the RENU network.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="service-card rounded h-100">
+                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Email Hosting">
+                        <div class="service-content bg-white p-4">
+                            <h4 class="mb-3">Email Hosting</h4>
+                            <p class="mb-0">The RENU Mail Hosting service supports mainly institutions that lack
+                                dedicated or experienced IT teams.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="service-card rounded h-100">
+                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Web Hosting">
+                        <div class="service-content bg-white p-4">
+                            <h4 class="mb-3">Web Hosting</h4>
+                            <p class="mb-0">RENU offers web hosting services to institutions and individuals carrying
+                                out research and offering education services.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-card rounded h-100">
+                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Web Development">
+                        <div class="service-content bg-white p-4">
+                            <h4 class="mb-3">Web Development</h4>
+                            <p class="mb-0">Web development refers to building and managing websites using web
+                                technologies such as HTML, CSS, JavaScript, PHP, and content management systems.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="service-card rounded h-100">
+                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="eduroam">
+                        <div class="service-content bg-white p-4">
+                            <h4 class="mb-3">eduroam</h4>
+                            <p class="mb-0">eduroam (education roaming) is a secure, global network access solution for
+                                research and education institutions .</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="service-card rounded h-100">
+                        <img src="img/eduVPN.png" class="img-fluid w-100 rounded-top" alt="eduVPN">
+                        <div class="service-content bg-white p-4">
+                            <h4 class="mb-3">eduVPN</h4>
+                            <p class="mb-0">eduVPN sets up an encrypted path between one's device and their
+                                organisation's network, enabling secure connectivity over unsecure networks.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-card rounded h-100">
+                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="eduroam">
+                        <div class="service-content bg-white p-4">
+                            <h4 class="mb-3">eduroam</h4>
+                            <p class="mb-0">eduroam (education roaming) is a secure, global network access solution for
+                                research and education institutions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="service-card rounded h-100">
+                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Cybersecurity">
+                        <div class="service-content bg-white p-4">
+                            <h4 class="mb-3">Cybersecurity</h4>
+                            <p class="mb-0">We handle cybersecurity incidents of the institutions connected to the RENU
+                                network.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="service-card rounded h-100">
+                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Anti-plagiarism Software">
+                        <div class="service-content bg-white p-4">
+                            <h4 class="mb-3">Anti-plagiarism Software</h4>
+                            <p class="mb-0">Anti-plagiarism software evaluates work from researchers and learners, and
+                                is very good for institutions to maintain academic integrity.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-card rounded h-100">
+                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="RENU Identity Federation">
+                        <div class="service-content bg-white p-4">
+                            <h4 class="mb-3">RENU Identity Federation (RIF)</h4>
+                            <p class="mb-0">RIF provides a simple avenue for users from research and education
+                                institutions to securely and reliably access and share resources locally and globally.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="service-card rounded h-100">
+                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Capacity Building">
+                        <div class="service-content bg-white p-4">
+                            <h4 class="mb-3">Capacity Building</h4>
+                            <p class="mb-0">Our program is designed to equip the network and systems engineers of member
+                                institutions with the skills and confidence to set up, manage and maintain clean,
+                                robust, and efficient networks.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="service-card rounded h-100">
+                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Network Monitoring">
+                        <div class="service-content bg-white p-4">
+                            <h4 class="mb-3">Network Monitoring</h4>
+                            <p class="mb-0">RENU offers all connected member institutions 24-hour network monitoring
+                                with real-time downtime notifications, updates, traffic utilization graphs, and monthly
+                                downtime reports.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-card rounded h-100">
+                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Open Source Mirror">
+                        <div class="service-content bg-white p-4">
+                            <h4 class="mb-3">Open Source Mirror</h4>
+                            <p class="mb-0">Institutions connected to the RENU network can access various applications,
+                                operating system updates, and patches within Uganda, helping save international
+                                bandwidth.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="service-card rounded h-100">
+                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top"
+                            alt="Enterprise Resource Planning">
+                        <div class="service-content bg-white p-4">
+                            <h4 class="mb-3">Enterprise Resource Planning</h4>
+                            <p class="mb-0">This is an all-in-one comprehensive platform known as RENU 360 that enables
+                                institutions to seamlessly manage and streamline day-to-day institutional operations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="service-card rounded h-100">
+                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top"
+                            alt="Campus Network as a Service">
+                        <div class="service-content bg-white p-4">
+                            <h4 class="mb-3">Campus Network as a Service (CNaaS)</h4>
+                            <p class="mb-0">CNaaS enables institutions to fully or partly outsource setting up,
+                                monitoring and management of campus networks to maintain clean and robust networks.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-card rounded h-100">
+                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top"
+                            alt="Solar-powered Internet Routers">
+                        <div class="service-content bg-white p-4">
+                            <h4 class="mb-3">Solar-powered Internet Routers</h4>
+                            <p class="mb-0">RENU partnered with Mesh++ to manufacture solar-powered Internet routers in
+                                Uganda, combining renewable energy with advanced connectivity technology.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="service-card rounded h-100">
+                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="RENU Backup Service">
+                        <div class="service-content bg-white p-4">
+                            <h4 class="mb-3">RENU Backup Service</h4>
+                            <p class="mb-0">RENU Backup Service offers a secure backup solution for protecting
+                                institutional data and ensuring reliable recovery when needed.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5">
+            <div class="row g-5 mb-5 align-items-center">
+                <div class="col-lg-7">
+                    <div class="position-relative mx-auto">
+                        <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text"
+                            placeholder="Email address to Subscribe">
+                        <button type="button"
+                            class="btn btn-secondary rounded-pill position-absolute top-0 end-0 py-2 px-4 mt-2 me-2">Subscribe</button>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-end">
+                        <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i
+                                class="fab fa-instagram"></i></a>
+                        <a class="btn btn-secondary btn-md-square rounded-circle me-0" href=""><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <div class="footer-item">
+                            <h3 class="text-white mb-4"><i
+                                    class="fas fa-hand-holding-water text-primary me-3"></i>TERNET</h3>
+                            <p class="mb-3">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum dolor sit
+                                amet, consectetur adipiscing elit consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="position-relative">
+                            <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text"
+                                placeholder="Enter your email">
+                            <button type="button"
+                                class="btn btn-secondary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-white mb-4">About Us</h4>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Why Choose Us</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Free Water Bottles</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Water Dispensers</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Bottled Water Coolers</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Contact us</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Terms & Conditions</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-white mb-4">Business Hours</h4>
+                        <div class="mb-3">
+                            <h6 class="text-muted mb-0">Mon - Friday:</h6>
+                            <p class="text-white mb-0">09.00 am to 07.00 pm</p>
+                        </div>
+                        <div class="mb-3">
+                            <h6 class="text-muted mb-0">Saturday:</h6>
+                            <p class="text-white mb-0">10.00 am to 05.00 pm</p>
+                        </div>
+                        <div class="mb-3">
+                            <h6 class="text-muted mb-0">Vacation:</h6>
+                            <p class="text-white mb-0">All Sunday is our vacation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-white mb-4">Contact Info</h4>
+                        <a href="#"><i class="fa fa-map-marker-alt me-2"></i> 123 Street, New York, USA</a>
+                        <a href="mailto:info@example.com"><i class="fas fa-envelope me-2"></i> info@example.com</a>
+                        <a href="mailto:info@example.com"><i class="fas fa-envelope me-2"></i> info@example.com</a>
+                        <a href="tel:+012 345 67890"><i class="fas fa-phone me-2"></i> +012 345 67890</a>
+                        <a href="tel:+012 345 67890" class="mb-3"><i class="fas fa-print me-2"></i> +012 345 67890</a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Fact Counter -->
+    </div>
+    <!-- Footer End -->
 
-        <!-- Testimonial Start -->
-        <div class="container-fluid testimonial py-5">
-            <div class="container py-5">
-                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                    <h4 class="text-uppercase text-primary">Testimonials</h4>
-                    <h1 class="display-3 text-capitalize mb-3">Our clients reviews.</h1>
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-md-0">
+                    <span class="text-body"><a href="#" class="border-bottom text-white"><i
+                                class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right
+                        reserved.</span>
                 </div>
-                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="testimonial-item text-center p-4">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt pariatur officiis quis molestias, sit iure sunt voluptatibus accusantium laboriosam dolore.
-                        </p>
-                        <div class="d-flex justify-content-center mb-4">
-                            <img src="img/testimonial-1.jpg" class="img-fluid border border-4 border-primary" style="width: 100px; height: 100px; border-radius: 50px;" alt="">
-                        </div>
-                        <div class="d-block">
-                            <h4 class="text-dark">Client Name</h4>
-                            <p class="m-0 pb-3">Profession</p>
-                            <div class="d-flex justify-content-center text-secondary">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item text-center p-4">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt pariatur officiis quis molestias, sit iure sunt voluptatibus accusantium laboriosam dolore.
-                        </p>
-                        <div class="d-flex justify-content-center mb-4">
-                            <img src="img/testimonial-2.jpg" class="img-fluid border border-4 border-primary" style="width: 100px; height: 100px; border-radius: 50px;" alt="">
-                        </div>
-                        <div class="d-block">
-                            <h4 class="text-dark">Client Name</h4>
-                            <p class="m-0 pb-3">Profession</p>
-                            <div class="d-flex justify-content-center text-secondary">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item text-center p-4">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt pariatur officiis quis molestias, sit iure sunt voluptatibus accusantium laboriosam dolore.
-                        </p>
-                        <div class="d-flex justify-content-center mb-4">
-                            <img src="img/testimonial-3.jpg" class="img-fluid border border-4 border-primary" style="width: 100px; height: 100px; border-radius: 50px;" alt="">
-                        </div>
-                        <div class="d-block">
-                            <h4 class="text-dark">Client Name</h4>
-                            <p class="m-0 pb-3">Profession</p>
-                            <div class="d-flex justify-content-center text-secondary">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item text-center p-4">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt pariatur officiis quis molestias, sit iure sunt voluptatibus accusantium laboriosam dolore.
-                        </p>
-                        <div class="d-flex justify-content-center mb-4">
-                            <img src="img/testimonial-3.jpg" class="img-fluid border border-4 border-primary" style="width: 100px; height: 100px; border-radius: 50px;" alt="">
-                        </div>
-                        <div class="d-block">
-                            <h4 class="text-dark">Client Name</h4>
-                            <p class="m-0 pb-3">Profession</p>
-                            <div class="d-flex justify-content-center text-secondary">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-md-6 text-center text-md-end text-body">
+                    <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                    <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                    <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                    Designed By <a class="border-bottom text-white" href="https://htmlcodex.com">HTML Codex</a>
+                    Distributed By <a class="border-bottom text-white" href="https://themewagon.com">ThemeWagon</a>
                 </div>
             </div>
         </div>
-        <!-- Testimonial End -->
-
-        <!-- Footer Start -->
-        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
-            <div class="container py-5">
-                <div class="row g-5 mb-5 align-items-center">
-                    <div class="col-lg-7">
-                        <div class="position-relative mx-auto">
-                            <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Email address to Subscribe">
-                            <button type="button" class="btn btn-secondary rounded-pill position-absolute top-0 end-0 py-2 px-4 mt-2 me-2">Subscribe</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="d-flex align-items-center justify-content-center justify-content-lg-end">
-                            <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-secondary btn-md-square rounded-circle me-0" href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row g-5">
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <div class="footer-item">
-                                <h3 class="text-white mb-4"><i class="fas fa-hand-holding-water text-primary me-3"></i>TERNET</h3>
-                                <p class="mb-3">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit.</p>
-                            </div>
-                            <div class="position-relative">
-                                <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
-                                <button type="button" class="btn btn-secondary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="text-white mb-4">About Us</h4>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Why Choose Us</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Free Water Bottles</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Water Dispensers</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Bottled Water Coolers</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Contact us</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Terms & Conditions</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="text-white mb-4">Business Hours</h4>
-                            <div class="mb-3">
-                                <h6 class="text-muted mb-0">Mon - Friday:</h6>
-                                <p class="text-white mb-0">09.00 am to 07.00 pm</p>
-                            </div>
-                            <div class="mb-3">
-                                <h6 class="text-muted mb-0">Saturday:</h6>
-                                <p class="text-white mb-0">10.00 am to 05.00 pm</p>
-                            </div>
-                            <div class="mb-3">
-                                <h6 class="text-muted mb-0">Vacation:</h6>
-                                <p class="text-white mb-0">All Sunday is our vacation</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="text-white mb-4">Contact Info</h4>
-                            <a href="#"><i class="fa fa-map-marker-alt me-2"></i> 123 Street, New York, USA</a>
-                            <a href="mailto:info@example.com"><i class="fas fa-envelope me-2"></i> info@example.com</a>
-                            <a href="mailto:info@example.com"><i class="fas fa-envelope me-2"></i> info@example.com</a>
-                            <a href="tel:+012 345 67890"><i class="fas fa-phone me-2"></i> +012 345 67890</a>
-                            <a href="tel:+012 345 67890" class="mb-3"><i class="fas fa-print me-2"></i> +012 345 67890</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer End -->
-
-        
-        <!-- Copyright Start -->
-        <div class="container-fluid copyright py-4">
-            <div class="container">
-                <div class="row g-4 align-items-center">
-                    <div class="col-md-6 text-center text-md-start mb-md-0">
-                        <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right reserved.</span>
-                    </div>
-                    <div class="col-md-6 text-center text-md-end text-body">
-                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                        Designed By <a class="border-bottom text-white" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom text-white" href="https://themewagon.com">ThemeWagon</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Copyright End -->
+    </div>
+    <!-- Copyright End -->
 
 
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-secondary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
 
-        
+
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -473,10 +657,10 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    
+
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    </body>
+</body>
 
 </html>
