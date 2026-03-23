@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>TERNET - Membership</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+    <style>
+        /* Custom Styles for Membership Page */
+        .membership-header-section {
+            background: linear-gradient(135deg, #213469 0%, #0d6efd 100%);
+            padding: 60px 0;
+            position: relative;
+        }
+        
+        .membership-header-section::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 50px;
+            background: url("data:image/svg+xml,'%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffffff' d='M0,160L48,170.7C96,181,192,203,288,197.3C384,192,480,160,576,144C672,128,768,128,864,154.7C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E") no-repeat;
+            background-size: cover;
+        }
+
+        .feature-box {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+
+        .feature-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+        }
+
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #213469 0%, #0d6efd 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+
+        .feature-icon i {
+            font-size: 32px;
+            color: white;
+        }
+
+        .membership-card-wrapper {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 5px 30px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+            border-left: 5px solid #213469;
+        }
+
+        .membership-card-wrapper:hover {
+            box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+        }
+
+        .membership-card-wrapper.associate {
+            border-left-color: #6c757d;
+        }
+
+        .membership-card-wrapper.affiliate {
+            border-left-color: #212529;
+        }
+
+        .membership-card-icon {
+            width: 60px;
+            height: 60px;
+            background: #f8f9fa;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .membership-card-icon i {
+            font-size: 28px;
+            color: #213469;
+        }
+
+        .process-step {
+            position: relative;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .process-step::after {
+            content: '\f054';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            position: absolute;
+            right: -10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #213469;
+            font-size: 20px;
+            display: none;
+        }
+
+        .process-step:last-child::after {
+            display: none;
+        }
+
+        .process-number {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #213469 0%, #0d6efd 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .faq-question {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .faq-question:hover {
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .faq-question h5 {
+            color: #213469;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .faq-question h5 i {
+            transition: transform 0.3s ease;
+        }
+
+        .stat-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+        }
+
+        .stat-card i {
+            font-size: 48px;
+            color: #213469;
+            margin-bottom: 15px;
+        }
+
+        .stat-card h2 {
+            font-size: 42px;
+            font-weight: bold;
+            color: #213469;
+            margin-bottom: 5px;
+        }
+
+        .stat-card p {
+            color: #666;
+            font-size: 16px;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #213469 0%, #0d6efd 100%);
+            padding: 80px 0;
+            position: relative;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,'%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        @media (min-width: 768px) {
+            .process-step::after {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-trail"></div>
+
+    <!-- Spinner Start -->
+    <!-- <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div> -->
+
+   <!-- FIRST TOP Start-->
+    <div class="container-fluid bg-topnavbar">
+        <div class="row">
+            <div class="col-12 col-md-6 text-white py-2" style="font-size: 12px;">
+                <div class="row g-3 align-items-center">
+                    <div class="col-6" style="border-right: 1px solid #fff;">
+                        <div class="d-flex align-items-start gap-2" style="padding-right: 10px;">
+                            <i class="far fa-clock mt-1"></i>
+                            <span>Working Hrs: Mon - Fri : 8.30 AM - 4.30 PM., Sat & Sun Closed.</span>
+                        </div>
+                    </div>
+                    <div class="col-6" style="border-right: 1px solid #fff;">
+                        <div class="d-flex align-items-start gap-2">
+                            <i class="fas fa-map-marker-alt mt-1"></i>
+                            <span>Kilimahewa Road, House No.2, UDSM, Dar Es Salaam, Tanzania</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 text-white py-2" style="font-size: 12px;">
+                <div class="row g-3 align-items-center">
+                    <div class="col-4" style="border-right: 1px solid #fff;">
+                        <a href="tel:+255612345678"
+                            class="text-white text-decoration-none d-flex align-items-center gap-2"
+                            style="padding-right: 15px;">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>[255] 738 353 995</span>
+                        </a>
+                    </div>
+                    <div class="col-3" style="border-right: 1px solid #fff;">
+                        <a href="mailto:info@ternet.co.tz"
+                            class="text-white text-decoration-none d-flex align-items-center gap-2"
+                            style="padding-right: 15px;">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@ternet.co.tz</span>
+                        </a>
+                    </div>
+                    <div class="col-5">
+                        <div class="d-flex align-items-center gap-3">
+                            <a href="#" class="text-white"><i class="fab fa-facebook-f"
+                                    style="border-right: 1px solid #fff; padding-right: 10px;"></i></a>
+                            <a href="#" class="text-white"><i class="fab fa-twitter"
+                                    style="border-right: 1px solid #fff; padding-right: 10px;"></i></a>
+                            <a href="#" class="text-white"><i class="fab fa-instagram"
+                                    style="border-right: 1px solid #fff; padding-right: 10px;"></i></a>
+                            <a href="#" class="text-white"><i class="fab fa-linkedin-in"
+                                    style="border-right: 1px solid #fff; padding-right: 10px;"></i></a>
+                            <a href="#" class="text-white"><i class="fab fa-youtube"
+                                    style="border-right: 1px solid #fff; padding-right: 10px;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIRST TOP End -->
+
+    <!-- Navbar & Breadcrumb Start -->
+    <div class="container-fluid position-relative p-0">
+        <!-- Navbar & Breadcrumb End -->
+        <div class="sticky-top">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <img src="img/logo.png" alt="Logo" class="img-fluid" style="max-height: 80px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link text-primary">Home</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle text-primary" data-bs-toggle="dropdown">Explore
+                                Us</a>
+                            <div class="dropdown-menu mega-menu p-4" style="min-width: 400px;">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <h6 class="mega-title">About TERNET</h6>
+                                        <a href="about.html" class="dropdown-item">
+                                            <span>About Us</span>
+                                        </a>
+                                        <!-- <a href="team.html" class="dropdown-item">
+                                            <span>Our Team</span>
+                                        </a> -->
+                                        <a href="about.html" class="dropdown-item">
+                                            <span>Message from CEO</span>
+                                        </a>
+                                        <a href="about.html" class="dropdown-item">
+                                            <span>Vission, Mission and Core Values</span>
+                                        </a>
+                                        <!-- <a href="about.html" class="dropdown-item">
+                                        <span>Leadership And Management</span>
+                                    </a>
+                                    <a href="about.html" class="dropdown-item">
+                                        <span>Award and Achievements</span>
+                                    </a>
+                                    <a href="about.html" class="dropdown-item">
+                                        <span>International Appointments</span>
+                                    </a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown mega-dropdown">
+
+                            <a href="#" class="nav-link dropdown-toggle text-primary" data-bs-toggle="dropdown">
+                                Services</a>
+                            <div class="dropdown-menu mega-menu p-4">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h6 class="mega-title">Our Services</h6>
+                                        <a href="service.html" class="mega-item">
+                                            <span>Services</span>
+                                        </a>
+                                        <a href="trainings.html" class="mega-item">
+                                            <!-- <i class="fas fa-chalkboard-teacher"></i> -->
+                                            <span>Trainings</span>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <a href="blog.html" class="nav-item nav-link text-primary">Events</a>
+                        <a href="membership.html" class="nav-item nav-link active text-primary">Membership</a>
+
+                    </div>
+                    <!-- <div class="d-none d-xl-flex me-3">
+                        <div class="d-flex flex-column pe-3 border-end border-primary">
+                            <span class="text-primary">Get Free Delivery</span>
+                            <a href="tel:+4733378901"><span class="text-primary">Free: + 0123 456 7890</span></a>
+                        </div>
+                    </div> -->
+                    <a href="" class="btn btn-primary rounded-pill d-inline-flex flex-shrink-0 py-2 px-4">Become a
+                        Member</a>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar & Hero Start -->
+
+        <!-- Breadcrumb Header -->
+        <div class="container-fluid bg-breadcrumb">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Trainings</h4>
+                <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Services</a></li>
+                    <li class="breadcrumb-item active text-primary">Trainings</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar & Breadcrumb End -->
+
+
+    <!-- Stats Section -->
+    <div class="container py-5 mt-5">
+        <div class="row g-4">
+            <div class="col-6 col-md-3">
+                <div class="stat-card">
+                    <i class="fas fa-university"></i>
+                    <h2>50+</h2>
+                    <p>Institutions</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="stat-card">
+                    <i class="fas fa-users"></i>
+                    <h2>100K+</h2>
+                    <p>Users</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="stat-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h2>25+</h2>
+                    <p>Years</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="stat-card">
+                    <i class="fas fa-project-diagram"></i>
+                    <h2>200+</h2>
+                    <p>Projects</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Benefits Section -->
+    <div class="container-fluid bg-light py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h4 class="text-uppercase text-primary">Benefits</h4>
+                <h2 class="display-4 fw-bold">Why Join TERNET?</h2>
+                <p class="lead text-muted mx-auto" style="max-width: 700px;">Access world-class networking infrastructure and collaborative platforms designed for Tanzania's academic community.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h4 class="mb-3">High-Speed Network</h4>
+                        <p class="text-muted">Connect to Tanzania's academic backbone with reliable high-speed internet connectivity.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-book-reader"></i>
+                        </div>
+                        <h4 class="mb-3">Research Resources</h4>
+                        <p class="text-muted">Access international journals, databases, and academic publications for your research.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4 class="mb-3">Cyber Security</h4>
+                        <p class="text-muted">Protect your institution with Tz-CERT services and security monitoring.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h4 class="mb-3">Training</h4>
+                        <p class="text-muted">Capacity building programs for staff and students to enhance technical skills.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h4 class="mb-3">Collaboration</h4>
+                        <p class="text-muted">Partner with other institutions on research projects and academic initiatives.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h4 class="mb-3">Cloud Services</h4>
+                        <p class="text-muted">Access cloud computing resources and identity federation for seamless sharing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Membership Categories -->
+    <div class="container py-5" id="categories">
+        <div class="text-center mb-5">
+            <h4 class="text-uppercase text-primary">Categories</h4>
+            <h2 class="display-4 fw-bold">Membership Types</h2>
+            <p class="lead text-muted mx-auto" style="max-width: 700px;">Choose the membership category that fits your institution.</p>
+        </div>
+
+        <div class="row g-4">
+            <!-- Corporate -->
+            <div class="col-lg-4">
+                <div class="membership-card-wrapper">
+                    <div class="membership-card-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3 class="mb-3">Corporate Member</h3>
+                    <p class="text-muted mb-4">For established universities and degree-awarding institutions</p>
+                    <h6 class="text-primary mb-3">Eligible Institutions:</h6>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Public universities</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Institutions by Act of Parliament</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Private chartered universities</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary w-100 rounded-pill">Apply Now</a>
+                </div>
+            </div>
+
+            <!-- Associate -->
+            <div class="col-lg-4">
+                <div class="membership-card-wrapper associate">
+                    <div class="membership-card-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <h3 class="mb-3">Associate Member</h3>
+                    <p class="text-muted mb-4">For licensed institutions and research bodies</p>
+                    <h6 class="text-secondary mb-3">Eligible Institutions:</h6>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2"><i class="fas fa-check-circle text-secondary me-2"></i> NCHE licensed institutions</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-secondary me-2"></i> Tertiary institutions (MoES)</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-secondary me-2"></i> Research institutions (UNCST)</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-outline-secondary w-100 rounded-pill">Apply Now</a>
+                </div>
+            </div>
+
+            <!-- Affiliate -->
+            <div class="col-lg-4">
+                <div class="membership-card-wrapper affiliate">
+                    <div class="membership-card-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="mb-3">Affiliate Member</h3>
+                    <p class="text-muted mb-4">For schools and quality assurance bodies</p>
+                    <h6 class="text-dark mb-3">Eligible Institutions:</h6>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2"><i class="fas fa-check-circle text-dark me-2"></i> Examination bodies</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-dark me-2"></i> Secondary schools (MoES)</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-dark me-2"></i> Primary schools (MoES)</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-outline-dark w-100 rounded-pill">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Process Section -->
+    <div class="container-fluid bg-light py-5" id="join">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h4 class="text-uppercase text-primary">Process</h4>
+                <h2 class="display-4 fw-bold">How to Join</h2>
+                <p class="lead text-muted mx-auto" style="max-width: 600px;">Four simple steps to become a TERNET member.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="process-step">
+                        <div class="process-number">1</div>
+                        <h5 class="mb-2">Apply</h5>
+                        <p class="text-muted">Submit application with required documents</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="process-step">
+                        <div class="process-number">2</div>
+                        <h5 class="mb-2">Verify</h5>
+                        <p class="text-muted">We verify your institution's eligibility</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="process-step">
+                        <div class="process-number">3</div>
+                        <h5 class="mb-2">Sign</h5>
+                        <p class="text-muted">Sign membership agreement</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="process-step">
+                        <div class="process-number">4</div>
+                        <h5 class="mb-2">Connect</h5>
+                        <p class="text-muted">Get connected to TERNET network</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="contact.html" class="btn btn-primary btn-lg rounded-pill px-5">
+                    <i class="fas fa-download me-2"></i> Download Application Form
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h4 class="text-uppercase text-primary">FAQ</h4>
+            <h2 class="display-4 fw-bold">Questions & Answers</h2>
+        </div>
+        <div class="row justify-content-center">
+            < class="col-lg-8">
+                <div class="faq-question">
+                    <h5 class="d-flex justify-content-between align-items-center">
+                        Who can become a TERNET member?
+                        <i class="fas fa-chevron-down"></i>
+                    </h5>
+                    <p class="mt-3 text-muted mb-0">TERNET membership is open to universities, colleges, research institutes, schools, and other educational institutions registered in Tanzania. Each category has specific eligibility requirements.</p>
+                </div>
+                <div class="faq-question">
+                    <h5 class="d-flex justify-content-between align-items-center">
+                        What are the benefits of membership?
+                        <i class="fas fa-chevron-down"></i>
+                    </h5>
+                    <p class="mt-3 text-muted mb-0">Members enjoy high-speed internet, research databases, cybersecurity services, training programs, collaboration opportunities, and cloud services.</p>
+                </div>
+                <div class="faq-question">
+                    <h5 class="d-flex justify-content-between align-items-center">
+                        How long does the application process take?
+                        <i class="fas fa-chevron-down"></i>
+                    </h5>
+                    <p class="mt-3 text-muted mb-0">The process typically takes 2-4 weeks from application to service activation, depending on verification requirements.</p>
+                </div>
+                <div class="faq-question">
+                    <h5 class="d-flex justify-content-between align-items-center">
+                        What documents are required?
+                        <i class="fas fa-chevron-down"></i>
+                    </h5>
+                    <p class="mt-3 text-muted mb-0">Required documents include registration certificate, proof of legal status, authorized representative ID, and relevant accreditation documents.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="cta-section">
+        <div class="container text-center">
+            <h2 class="display-4 text-white mb-4">Join TERNET Today</h2>
+            <p class="lead text-white mb-4">Take your institution to the next level. Connect with Tanzania's academic community.</p>
+            <a href="contact.html" class="btn btn-light btn-lg rounded-pill px-5">
+                <i class="fas fa-paper-plane me-2"></i> Apply Now
+            </a>
+        </div>
+    </div>
+
+    <!-- Contact Cards -->
+    <div class="container py-5">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="text-center p-4 bg-white rounded shadow-sm h-100">
+                    <i class="fas fa-phone-alt fa-2x text-primary mb-3"></i>
+                    <h5>Phone</h5>
+                    <p class="mb-0">+255 738 353 995</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="text-center p-4 bg-white rounded shadow-sm h-100">
+                    <i class="fas fa-envelope fa-2x text-primary mb-3"></i>
+                    <h5>Email</h5>
+                    <p class="mb-0">info@ternet.co.tz</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="text-center p-4 bg-white rounded shadow-sm h-100">
+                    <i class="fas fa-map-marker-alt fa-2x text-primary mb-3"></i>
+                    <h5>Address</h5>
+                    <p class="mb-0">Kilimahewa Road, UDSM</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid footer py-5">
+        <div class="container py-5">
+            <div class="row g-5 mb-5">
+                <div class="col-lg-7">
+                    <div class="position-relative mx-auto">
+                        <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-secondary rounded-pill position-absolute top-0 end-0 py-2 px-4 mt-2 me-2">Subscribe</button>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="d-flex justify-content-center">
+                        <a class="btn btn-secondary btn-md-square rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-secondary btn-md-square rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-secondary btn-md-square rounded-circle me-2" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-secondary btn-md-square rounded-circle" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-3">
+                    <h4 class="text-white mb-4">About Us</h4>
+                    <p class="mb-3">TERNET connects Tanzania's higher learning institutions for shared education and research resources.</p>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h4 class="text-white mb-4">Quick Links</h4>
+                    <a href="#" class="d-block mb-2"><i class="fas fa-angle-right me-2"></i> Home</a>
+                    <a href="#" class="d-block mb-2"><i class="fas fa-angle-right me-2"></i> Services</a>
+                    <a href="#" class="d-block mb-2"><i class="fas fa-angle-right me-2"></i> Membership</a>
+                    <a href="#" class="d-block"><i class="fas fa-angle-right me-2"></i> Contact</a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h4 class="text-white mb-4">Business Hours</h4>
+                    <p class="mb-2">Mon - Fri: 9:00 AM - 7:00 PM</p>
+                    <p class="mb-0">Sat: 10:00 AM - 5:00 PM</p>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h4 class="text-white mb-4">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-2"></i> Kilimahewa Road, UDSM</p>
+                    <p class="mb-2"><i class="fas fa-phone me-2"></i> +255 738 353 995</p>
+                    <p class="mb-0"><i class="fas fa-envelope me-2"></i> info@ternet.co.tz</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <span>&copy; <span id="year"></span> TERNET. All rights reserved.</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="me-3">Privacy</a>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary btn-lg-square rounded-circle back-to-top">
+        <i class="fa fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -27,94 +27,173 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
-            <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-
     </head>
 
-    <body>  
-          <div class="cursor-dot"></div>
-    <div class="cursor-trail"></div>
+    <body>
 
         <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <!-- <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
                 <span class="sr-only">Loading...</span>
             </div>
-        </div>
+        </div> -->
         <!-- Spinner End -->
+  <div class="cursor-dot"></div>
+    <div class="cursor-trail"></div>
+    <!-- FIRST TOP Start-->
+    <div class="container-fluid bg-topnavbar">
+        <div class="row">
+            <div class="col-12 col-md-6 text-white py-2" style="font-size: 12px;">
+                <div class="row g-3 align-items-center">
+                    <div class="col-6" style="border-right: 1px solid #fff;">
+                        <div class="d-flex align-items-start gap-2" style="padding-right: 10px;">
+                            <i class="far fa-clock mt-1"></i>
+                            <span>Working Hrs: Mon - Fri : 8.30 AM - 4.30 PM., Sat & Sun Closed.</span>
+                        </div>
+                    </div>
+                    <div class="col-6" style="border-right: 1px solid #fff;">
+                        <div class="d-flex align-items-start gap-2">
+                            <i class="fas fa-map-marker-alt mt-1"></i>
+                            <span>Kilimahewa Road, House No.2, UDSM, Dar Es Salaam, Tanzania</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 text-white py-2" style="font-size: 12px;">
+                <div class="row g-3 align-items-center">
+                    <div class="col-4" style="border-right: 1px solid #fff;">
+                        <a href="tel:+255612345678"
+                            class="text-white text-decoration-none d-flex align-items-center gap-2"
+                            style="padding-right: 15px;">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>[255] 738 353 995</span>
+                        </a>
+                    </div>
+                    <div class="col-3" style="border-right: 1px solid #fff;">
+                        <a href="mailto:info@ternet.co.tz"
+                            class="text-white text-decoration-none d-flex align-items-center gap-2"
+                            style="padding-right: 15px;">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@ternet.co.tz</span>
+                        </a>
+                    </div>
+                    <div class="col-5">
+                        <div class="d-flex align-items-center gap-3">
+                            <a href="#" class="text-white"><i class="fab fa-facebook-f"
+                                    style="border-right: 1px solid #fff; padding-right: 10px;"></i></a>
+                            <a href="#" class="text-white"><i class="fab fa-twitter"
+                                    style="border-right: 1px solid #fff; padding-right: 10px;"></i></a>
+                            <a href="#" class="text-white"><i class="fab fa-instagram"
+                                    style="border-right: 1px solid #fff; padding-right: 10px;"></i></a>
+                            <a href="#" class="text-white"><i class="fab fa-linkedin-in"
+                                    style="border-right: 1px solid #fff; padding-right: 10px;"></i></a>
+                            <a href="#" class="text-white"><i class="fab fa-youtube"
+                                    style="border-right: 1px solid #fff; padding-right: 10px;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIRST TOP End -->
 
-        <!-- Navbar & Hero Start -->
-        <div class="container-fluid position-relative p-0">
-            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+    <!-- Navbar & Breadcrumb Start -->
+    <div class="container-fluid position-relative p-0">
+        <!-- Navbar & Breadcrumb End -->
+        <div class="sticky-top">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
                 <a href="" class="navbar-brand p-0">
-                    <h1 class="text-primary"><i class="fas fa-hand-holding-water me-3"></i>TERNET</h1>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                    <img src="img/logo.png" alt="Logo" class="img-fluid" style="max-height: 80px;">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Service</a>
-                        <a href="blog.html" class="nav-item nav-link">Blog</a>
+                        <a href="index.html" class="nav-item nav-link active text-primary">Home</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="feature.html" class="dropdown-item">Our Feature</a>
-                                <a href="product.html" class="dropdown-item">Our Product</a>
-                                <a href="team.html" class="dropdown-item">Our Team</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                <a href="404.html" class="dropdown-item">404 Page</a>
+                            <a href="#" class="nav-link dropdown-toggle text-primary" data-bs-toggle="dropdown">Explore
+                                Us</a>
+                            <div class="dropdown-menu mega-menu p-4" style="min-width: 400px;">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <h6 class="mega-title">About TERNET</h6>
+                                        <a href="about.html" class="dropdown-item">
+                                            <span>About Us</span>
+                                        </a>
+                                        <!-- <a href="team.html" class="dropdown-item">
+                                            <span>Our Team</span>
+                                        </a> -->
+                                        <a href="about.html" class="dropdown-item">
+                                            <span>Message from CEO</span>
+                                        </a>
+                                        <a href="about.html" class="dropdown-item">
+                                            <span>Vission, Mission and Core Values</span>
+                                        </a>
+                                        <!-- <a href="about.html" class="dropdown-item">
+                                        <span>Leadership And Management</span>
+                                    </a>
+                                    <a href="about.html" class="dropdown-item">
+                                        <span>Award and Achievements</span>
+                                    </a>
+                                    <a href="about.html" class="dropdown-item">
+                                        <span>International Appointments</span>
+                                    </a> -->
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                        <div class="nav-item dropdown mega-dropdown">
+
+                            <a href="#" class="nav-link dropdown-toggle text-primary" data-bs-toggle="dropdown">
+                                Services</a>
+                            <div class="dropdown-menu mega-menu p-4">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h6 class="mega-title">Our Services</h6>
+                                        <a href="service.html" class="mega-item">
+                                            <span>Services</span>
+                                        </a>
+                                        <a href="trainings.html" class="mega-item">
+                                            <!-- <i class="fas fa-chalkboard-teacher"></i> -->
+                                            <span>Trainings</span>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <a href="blog.html" class="nav-item nav-link text-primary">Events</a>
+                        <a href="membership.html" class="nav-item nav-link text-primary">Membership</a>
+
                     </div>
-                    <div class="d-none d-xl-flex me-3">
+                    <!-- <div class="d-none d-xl-flex me-3">
                         <div class="d-flex flex-column pe-3 border-end border-primary">
-                            <span class="text-body">Get Free Delivery</span>
+                            <span class="text-primary">Get Free Delivery</span>
                             <a href="tel:+4733378901"><span class="text-primary">Free: + 0123 456 7890</span></a>
                         </div>
-                    </div>
-                    <button class="btn btn-primary btn-md-square d-flex flex-shrink-0 mb-3 mb-lg-0 rounded-circle me-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
-                    <a href="" class="btn btn-primary rounded-pill d-inline-flex flex-shrink-0 py-2 px-4">Order Now</a>
+                    </div> -->
+                    <a href="" class="btn btn-primary rounded-pill d-inline-flex flex-shrink-0 py-2 px-4">Become a
+                        Member</a>
                 </div>
             </nav>
-
-            <!-- Header Start -->
-            <div class="container-fluid bg-breadcrumb">
-                <div class="container text-center py-5" style="max-width: 900px;">
-                    <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Contact Us</h4>
-                    <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                        <li class="breadcrumb-item active text-primary">Contact</li>
-                    </ol>    
-                </div>
-            </div>
-            <!-- Header End -->
         </div>
-        <!-- Navbar & Hero End -->
+        <!-- Navbar & Hero Start -->
 
-        <!-- Modal Search Start -->
-        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content rounded-0">
-                    <div class="modal-header">
-                        <h4 class="modal-title mb-0" id="exampleModalLabel">Search by keyword</h4>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body d-flex align-items-center">
-                        <div class="input-group w-75 mx-auto d-flex">
-                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
-                            <span id="search-icon-1" class="input-group-text btn border p-3"><i class="fa fa-search text-white"></i></span>
-                        </div>
-                    </div>
-                </div>
+        <!-- Breadcrumb Header -->
+        <div class="container-fluid bg-breadcrumb">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Trainings</h4>
+                <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Services</a></li>
+                    <li class="breadcrumb-item active text-primary">Trainings</li>
+                </ol>
             </div>
         </div>
-        <!-- Modal Search End -->
+    </div>
+    <!-- Navbar & Breadcrumb End -->
+
 
         <!-- Contact Start -->
         <div class="container-fluid contact bg-light py-5">
@@ -206,117 +285,152 @@
         </div>
         <!-- Contact End -->
 
-        <!-- Footer Start -->
-        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
-            <div class="container py-5">
-                <div class="row g-5 mb-5 align-items-center">
-                    <div class="col-lg-7">
-                        <div class="position-relative mx-auto">
-                            <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Email address to Subscribe">
-                            <button type="button" class="btn btn-secondary rounded-pill position-absolute top-0 end-0 py-2 px-4 mt-2 me-2">Subscribe</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="d-flex align-items-center justify-content-center justify-content-lg-end">
-                            <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-secondary btn-md-square rounded-circle me-0" href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
+       <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5">
+            <div class="row g-5 mb-5 align-items-center">
+                <div class="col-lg-7">
+                    <div class="position-relative mx-auto">
+                        <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text"
+                            placeholder="Email address to Subscribe">
+                        <button type="button"
+                            class="btn btn-secondary rounded-pill position-absolute top-0 end-0 py-2 px-4 mt-2 me-2">Subscribe</button>
                     </div>
                 </div>
-                <div class="row g-5">
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <div class="footer-item">
-                                <h3 class="text-white mb-4"><i class="fas fa-hand-holding-water text-primary me-3"></i>TERNET</h3>
-                                <p class="mb-3">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit.</p>
-                            </div>
-                            <div class="position-relative">
-                                <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
-                                <button type="button" class="btn btn-secondary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
-                            </div>
-                        </div>
+                <div class="col-lg-5">
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-end">
+                        <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i
+                                class="fab fa-instagram"></i></a>
+                        <a class="btn btn-secondary btn-md-square rounded-circle me-0" href=""><i
+                                class="fab fa-linkedin-in"></i></a>
                     </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="text-white mb-4">About Us</h4>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Why Choose Us</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Free Water Bottles</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Water Dispensers</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Bottled Water Coolers</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Contact us</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Terms & Conditions</a>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">
+                                <!-- <i class="fas fa-hand-holding-water text-primary me-3"></i> -->
+                                About Us
+                            </h4>
+                            <p class="mb-3">TERNET is a network for Tanzania higher learning and research institutes
+                                aiming at providing platform for enabling the sharing of education and research
+                                resource.</p>
                         </div>
+
                     </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="text-white mb-4">Business Hours</h4>
-                            <div class="mb-3">
-                                <h6 class="text-muted mb-0">Mon - Friday:</h6>
-                                <p class="text-white mb-0">09.00 am to 07.00 pm</p>
-                            </div>
-                            <div class="mb-3">
-                                <h6 class="text-muted mb-0">Saturday:</h6>
-                                <p class="text-white mb-0">10.00 am to 05.00 pm</p>
-                            </div>
-                            <div class="mb-3">
-                                <h6 class="text-muted mb-0">Vacation:</h6>
-                                <p class="text-white mb-0">All Sunday is our vacation</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-white mb-4"> Quick Links</h4>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Home</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Resource for Engineers</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Staff Mail</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Academia Cert</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Tz-cert</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Faqs</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Blog</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Contact us</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Terms & Conditions</a>
                     </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="text-white mb-4">Contact Info</h4>
-                            <a href="#"><i class="fa fa-map-marker-alt me-2"></i> 123 Street, New York, USA</a>
-                            <a href="mailto:info@example.com"><i class="fas fa-envelope me-2"></i> info@example.com</a>
-                            <a href="mailto:info@example.com"><i class="fas fa-envelope me-2"></i> info@example.com</a>
-                            <a href="tel:+012 345 67890"><i class="fas fa-phone me-2"></i> +012 345 67890</a>
-                            <a href="tel:+012 345 67890" class="mb-3"><i class="fas fa-print me-2"></i> +012 345 67890</a>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-white mb-4">Business Hours</h4>
+                        <div class="mb-3">
+                            <h6 class="text-muted mb-0">Mon - Friday:</h6>
+                            <p class="text-white mb-0">09.00 am to 07.00 pm</p>
                         </div>
+                        <div class="mb-3">
+                            <h6 class="text-muted mb-0">Saturday:</h6>
+                            <p class="text-white mb-0">10.00 am to 05.00 pm</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-white mb-4">Contact Info</h4>
+                        <a href="#"><i class="fa fa-map-marker-alt me-2"></i> Kilimahewa Road, UDSM, Tanzania</a>
+                        <a href="tel:+255738353995"><i class="fas fa-phone me-2"></i> +255 738 353 995</a>
+                        <a href="mailto:helpdesk@ternet.or.tz"><i class="fas fa-envelope me-2"></i>
+                            helpdesk@ternet.or.tz</a>
+                        <!-- <a href="mailto:info@ternet.or.tz"><i class="fas fa-envelope me-2"></i> info@ternet.or.tz</a> -->
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Footer End -->
+    </div>
+    <!-- Footer End -->
 
-        
-        <!-- Copyright Start -->
-        <div class="container-fluid copyright py-4">
-            <div class="container">
-                <div class="row g-4 align-items-center">
-                    <div class="col-md-6 text-center text-md-start mb-md-0">
-                        <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right reserved.</span>
-                    </div>
-                    <div class="col-md-6 text-center text-md-end text-body">
-                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                        Designed By <a class="border-bottom text-white" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom text-white" href="https://themewagon.com">ThemeWagon</a>
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-md-0">
+                    <span class="text-body">
+                        <a href="#" class="border-bottom text-white">
+                            <i class="fas fa-copyright text-light me-2"></i>
+                            TERNET <span id="year"></span>
+                        </a>, All right reserved.
+                    </span>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="footer-menu">
+                        <a href="#">Home</a>
+                        <a href="#">Cookies</a>
+                        <a href="#">Help</a>
+                        <a href="#">FQAs</a>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Copyright End -->
 
+   
 
         <!-- Back to Top -->
-        <a href="#" class="btn btn-secondary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+        <a href="#" class="btn btn-secondary btn-lg-square rounded-circle back-to-top"><i
+                class="fa fa-arrow-up"></i></a>
+        <style>
+            .topbar-right-col {
+                border-left: 1px solid rgba(255, 255, 255, 0.6);
+            }
 
-        
-    <!-- JavaScript Libraries -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    
+            @media (max-width: 767.98px) {
+                .topbar-right-col {
+                    border-left: none;
+                    border-top: 1px solid rgba(255, 255, 255, 0.6);
+                    margin-top: 10px;
+                    padding-top: 10px;
+                }
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-    </body>
+                .topbar-left,
+                .topbar-right {
+                    justify-content: center !important;
+                    text-align: center;
+                }
+            }
+        </style>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+
+</body>
 
 </html>
