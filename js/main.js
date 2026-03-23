@@ -9,21 +9,20 @@
 
 
     // tails
-    const dot = document.querySelector(".cursor-dot");
-    const trail = document.querySelector(".cursor-trail");
+    var dot = document.querySelector(".cursor-dot");
+    var trail = document.querySelector(".cursor-trail");
 
-    document.addEventListener("mousemove", (e) => {
-
-        dot.style.left = e.clientX + "px";
-        dot.style.top = e.clientY + "px";
-
-        trail.style.left = e.clientX + "px";
-        trail.style.top = e.clientY + "px";
-
-    });
+    if (dot && trail) {
+        document.addEventListener("mousemove", function (e) {
+            dot.style.left = e.clientX + "px";
+            dot.style.top = e.clientY + "px";
+            trail.style.left = e.clientX + "px";
+            trail.style.top = e.clientY + "px";
+        });
+    }
 
     // cursor
-    const cursor = document.querySelector(".custom-cursor");
+    var cursor = document.querySelector(".custom-cursor");
 
     if (cursor) {
         document.addEventListener("mousemove", function (e) {
