@@ -1801,6 +1801,65 @@ h6 {
     }
 }
 
+/* Service Page Improvements */
+.service .service-card {
+    border: none;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.service .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.service .service-card img {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.service .service-card:hover img {
+    transform: scale(1.1);
+}
+
+.service .service-content {
+    position: relative;
+}
+
+.service .service-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    height: 3px;
+    background: linear-gradient(90deg, #0d6efd, #0d6efd90);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.service .service-card:hover .service-content::before {
+    transform: scaleX(1);
+}
+
+.service .service-content h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.service .service-card:hover .service-content h4 {
+    color: #0d6efd;
+}
+
+.service .service-content p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
 /* Principle Cards (Vision & Mission) */
 .principle-card {
     position: relative;
