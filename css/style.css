@@ -1646,6 +1646,161 @@ h6 {
     border-radius: 2px;
 }
 
+/* Main About Section */
+.about-main-image {
+    position: relative;
+    padding: 20px;
+}
+
+.about-main-image img {
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.about-main-image:hover img {
+    transform: scale(1.02);
+}
+
+.about-main-image .image-accent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 3px solid #0d6efd;
+    border-radius: 20px;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.about-main-image .experience-badge {
+    position: absolute;
+    bottom: 30px;
+    right: -10px;
+    background: linear-gradient(135deg, #0d6efd, #0d6efd90);
+    padding: 20px 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(13, 110, 253, 0.4);
+    text-align: center;
+}
+
+.about-main-image .experience-badge .years {
+    display: block;
+    font-size: 32px;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1;
+}
+
+.about-main-image .experience-badge .text {
+    display: block;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-top: 5px;
+}
+
+.about-content h3 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #333;
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.about-content h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: #0d6efd;
+    border-radius: 2px;
+}
+
+.about-content p {
+    color: #666;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.about-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.about-highlights .highlight-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.about-highlights .highlight-item:hover {
+    background: #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transform: translateX(5px);
+}
+
+.about-highlights .highlight-icon {
+    min-width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #0d6efd, #0d6efd90);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-highlights .highlight-icon i {
+    font-size: 20px;
+    color: #fff;
+}
+
+.about-highlights .highlight-text h5 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 3px;
+}
+
+.about-highlights .highlight-text p {
+    font-size: 13px;
+    color: #777;
+    margin: 0;
+}
+
+/* Responsive adjustments for About Section */
+@media (max-width: 991px) {
+    .about-main-image {
+        margin-bottom: 30px;
+    }
+
+    .about-main-image .experience-badge {
+        right: 10px;
+        bottom: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-content h3 {
+        font-size: 22px;
+    }
+
+    .about-main-image .experience-badge {
+        padding: 15px 20px;
+    }
+
+    .about-main-image .experience-badge .years {
+        font-size: 24px;
+    }
+}
+
 /* Principle Cards (Vision & Mission) */
 .principle-card {
     position: relative;
