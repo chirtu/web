@@ -112,7 +112,7 @@ h6 {
 
 .service-accordion .accordion-button:not(.collapsed) {
     background: #f8f9fa;
-    color: #0d6efd;
+    color: #213469;
     box-shadow: none;
 }
 
@@ -213,7 +213,7 @@ h6 {
 
 .mega-menu .mega-item:hover,
 .mega-menu .dropdown-item:hover {
-    color: #0d6efd;
+    color: #213469;
     padding-left: 5px;
 }
 
@@ -1090,7 +1090,7 @@ h6 {
 
 .training-carousel .owl-nav button.owl-prev,
 .training-carousel .owl-nav button.owl-next {
-    background: #0d6efd !important;
+    background: #213469 !important;
     color: white !important;
     width: 40px;
     height: 40px;
@@ -1107,7 +1107,7 @@ h6 {
 }
 
 .training-carousel .owl-dots .owl-dot.active {
-    background: #0d6efd !important;
+    background: #213469 !important;
 }
 
 /*** Training Carousel End ***/
@@ -1422,7 +1422,7 @@ h6 {
 
 .navbar .nav-link:hover,
 .navbar .nav-link.active {
-    color: #0d6efd;
+    color: #213469;
 }
 
 .navbar .dropdown-menu {
@@ -1459,19 +1459,19 @@ h6 {
 }
 
 .course-filters .btn.active {
-    background: #0d6efd;
+    background: #213469;
     color: white;
-    border-color: #0d6efd;
+    border-color: #213469;
 }
 
 .course-filters .btn:not(.active) {
     background: transparent;
-    border: 1px solid #0d6efd;
-    color: #0d6efd;
+    border: 1px solid #213469;
+    color: #213469;
 }
 
 .course-filters .btn:not(.active):hover {
-    background: #0d6efd;
+    background: #213469;
     color: white;
 }
 
@@ -1518,7 +1518,7 @@ h6 {
 }
 
 .service-card .service-content h4:hover {
-    color: #0d6efd;
+    color: #213469;
 }
 
 .service-card .service-content p {
@@ -1542,7 +1542,7 @@ h6 {
 .ceo-message-section .divider-line {
     width: 80px;
     height: 4px;
-    background: linear-gradient(90deg, #0d6efd, #0d6efd);
+    background: linear-gradient(90deg, #213469, #0d6efd);
     border-radius: 2px;
 }
 
@@ -1598,7 +1598,7 @@ h6 {
 .ceo-signature .signature-line {
     width: 60px;
     height: 3px;
-    background: #0d6efd;
+    background: #213469;
     margin-bottom: 15px;
 }
 
@@ -1642,7 +1642,7 @@ h6 {
 .section-divider {
     width: 80px;
     height: 4px;
-    background: linear-gradient(90deg, #0d6efd, #0d6efd);
+    background: linear-gradient(90deg, #0d6efd, #213469);
     border-radius: 2px;
 }
 
@@ -1677,7 +1677,7 @@ h6 {
     position: absolute;
     bottom: 30px;
     right: -10px;
-    background: linear-gradient(135deg, #0d6efd, #0d6efd90);
+    background: linear-gradient(135deg, #213469, #0d6efd90);
     padding: 20px 25px;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(13, 110, 253, 0.4);
@@ -1715,7 +1715,7 @@ h6 {
     left: 0;
     width: 60px;
     height: 3px;
-    background: #0d6efd;
+    background: #213469;
     border-radius: 2px;
 }
 
@@ -1750,7 +1750,7 @@ h6 {
 .about-highlights .highlight-icon {
     min-width: 50px;
     height: 50px;
-    background: linear-gradient(135deg, #0d6efd, #0d6efd90);
+    background: linear-gradient(135deg, #213469, #0d6efd90);
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -1834,7 +1834,7 @@ h6 {
     left: 20px;
     right: 20px;
     height: 3px;
-    background: linear-gradient(90deg, #0d6efd, #0d6efd90);
+    background: linear-gradient(90deg, #213469, #0d6efd90);
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
@@ -1851,7 +1851,7 @@ h6 {
 }
 
 .service .service-card:hover .service-content h4 {
-    color: #0d6efd;
+    color: #213469;
 }
 
 .service .service-content p {
@@ -1893,7 +1893,7 @@ h6 {
     left: 0;
     width: 50px;
     height: 3px;
-    background: #0d6efd;
+    background: #213469;
     border-radius: 2px;
 }
 
@@ -1925,7 +1925,7 @@ h6 {
 }
 
 .requirements-card {
-    border-left: 4px solid #0d6efd;
+    border-left: 4px solid #213469;
 }
 
 .requirements-card li {
@@ -1943,7 +1943,7 @@ h6 {
 }
 
 .request-card {
-    border-top: 4px solid #0d6efd;
+    border-top: 4px solid #213469;
 }
 
 .request-card h4 {
@@ -1991,7 +1991,44 @@ h6 {
 }
 
 .related-service-item:hover h6 {
-    color: #0d6efd !important;
+    color: #213469 !important;
+}
+
+/* CTA Section */
+.cta {
+    background: linear-gradient(135deg, #213469 0%, #0d6efd90 100%);
+}
+
+.cta h2 {
+    font-size: 36px;
+}
+
+.cta .btn-light {
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.cta .btn-light:hover {
+    background: #213469;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Training Benefits */
+.training-benefits .benefit-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(13, 110, 253, 0.1);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.training-benefits h5 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
 }
 
 /* Responsive for service details */
@@ -2040,7 +2077,7 @@ h6 {
 .principle-card .principle-icon {
     width: 70px;
     height: 70px;
-    background: linear-gradient(135deg, #0d6efd 0%, #0d6efd90 100%);
+    background: linear-gradient(135deg, #213469 0%, #0d6efd90 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -2070,7 +2107,7 @@ h6 {
     left: 0;
     width: 50px;
     height: 3px;
-    background: #0d6efd;
+    background: #213469;
     border-radius: 2px;
 }
 
@@ -2106,7 +2143,7 @@ h6 {
 
 .objectives-card .objectives-header i {
     font-size: 28px;
-    color: #0d6efd;
+    color: #213469;
 }
 
 .objectives-card .objectives-header h3 {
@@ -2140,7 +2177,7 @@ h6 {
 .objective-item .objective-number {
     min-width: 35px;
     height: 35px;
-    background: linear-gradient(135deg, #0d6efd, #0d6efd90);
+    background: linear-gradient(135deg, #213469, #0d6efd90);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -2173,7 +2210,7 @@ h6 {
 
 .values-card .values-header i {
     font-size: 28px;
-    color: #0d6efd;
+    color: #213469;
 }
 
 .values-card .values-header h3 {
@@ -2207,7 +2244,7 @@ h6 {
 .value-item .value-icon {
     min-width: 50px;
     height: 50px;
-    background: linear-gradient(135deg, #0d6efd, #0d6efd90);
+    background: linear-gradient(135deg, #213469, #0d6efd90);
     border-radius: 12px;
     display: flex;
     align-items: center;
