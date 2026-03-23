@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>TERNET - Gallery</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+</head>
+
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-trail"></div>
+
+    <!-- Spinner Start -->
+    <!-- <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div> -->
+
+    <!-- Header Info -->
+    <div class="container-fluid bg-topnavbar">
+        <div class="row">
+            <div class="col-12 col-md-6 text-white py-2" style="font-size: 12px;">
+                <div class="row g-3 align-items-center">
+                    <div class="col-6" style="border-right: 1px solid #fff;">
+                        <div class="d-flex align-items-start gap-2" style="padding-right: 10px;">
+                            <i class="far fa-clock mt-1"></i>
+                            <span>Working Hrs: Mon - Fri : 8.30 AM - 4.30 PM</span>
+                        </div>
+                    </div>
+                    <div class="col-6" style="border-right: 1px solid #fff;">
+                        <div class="d-flex align-items-start gap-2">
+                            <i class="fas fa-map-marker-alt mt-1"></i>
+                            <span>Kilimahewa Road, UDSM, Dar Es Salaam</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 text-white py-2" style="font-size: 12px;">
+                <div class="row g-3 align-items-center">
+                    <div class="col-4" style="border-right: 1px solid #fff;">
+                        <a href="tel:+255738353995"
+                            class="text-white text-decoration-none d-flex align-items-center gap-2">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+255 738 353 995</span>
+                        </a>
+                    </div>
+                    <div class="col-3" style="border-right: 1px solid #fff;">
+                        <a href="mailto:info@ternet.co.tz"
+                            class="text-white text-decoration-none d-flex align-items-center gap-2">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@ternet.co.tz</span>
+                        </a>
+                    </div>
+                    <div class="col-5">
+                        <div class="d-flex align-items-center gap-3">
+                            <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <div class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
+            <a href="" class="navbar-brand p-0">
+                <img src="img/logo.png" alt="Logo" class="img-fluid" style="max-height: 80px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link text-primary">Home</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle text-primary" data-bs-toggle="dropdown">Explore
+                            Us</a>
+                        <div class="dropdown-menu mega-menu p-4" style="min-width: 400px;">
+                            <div class="row">
+                                <div class="col-sm-5">
+                                    <h6 class="mega-title">About TERNET</h6>
+                                    <a href="about.html" class="dropdown-item">About Us</a>
+                                    <a href="about.html" class="dropdown-item">Message from CEO</a>
+                                    <a href="about.html" class="dropdown-item">Vision & Mission</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown mega-dropdown">
+                        <a href="#" class="nav-link dropdown-toggle text-primary" data-bs-toggle="dropdown">Services</a>
+                        <div class="dropdown-menu mega-menu p-4">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h6 class="mega-title">Our Services</h6>
+                                    <a href="service.html" class="mega-item">Services</a>
+                                    <a href="trainings.html" class="mega-item">Trainings</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="events.html" class="nav-item nav-link text-primary">Events</a>
+                    <a href="gallery.html" class="nav-item nav-link active text-primary">Gallery</a>
+                    <a href="membership.html" class="nav-item nav-link text-primary">Membership</a>
+                </div>
+                <a href="contact.html" class="btn btn-primary rounded-pill py-2 px-4">Contact Us</a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Header Section -->
+    <div class="container-fluid bg-breadcrumb">
+        <div class="container text-center py-5" style="max-width: 900px;">
+            <h1 class="display-3 text-white mb-4 wow fadeInDown" data-wow-delay="0.1s">Photo Gallery</h1>
+            <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active text-white">Gallery</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- Gallery Section -->
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h4 class="text-uppercase text-primary">Our Gallery</h4>
+            <h2 class="display-4 fw-bold">Capturing TERNET Moments</h2>
+            <p class="lead text-muted mx-auto" style="max-width: 700px;">Explore moments from our events, workshops,
+                conferences, and day-to-day operations.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="row justify-content-center mb-5">
+            <div class="col-auto">
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-primary active">All</button>
+                    <button type="button" class="btn btn-outline-primary">Events</button>
+                    <button type="button" class="btn btn-outline-primary">Conferences</button>
+                    <button type="button" class="btn btn-outline-primary">Training</button>
+                    <button type="button" class="btn btn-outline-primary">Infrastructure</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="row g-4">
+            <!-- Gallery Item 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="gallery-item position-relative overflow-hidden rounded">
+                    <img src="img/gallery.png" alt="Gallery" class="img-fluid w-100"
+                        style="height: 300px; object-fit: cover;">
+                    <div
+                        class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                        <a href="img/gallery.png" data-lightbox="gallery" class="btn btn-light rounded-circle">
+                            <i class="fas fa-eye"></i>
+                        </a>
+                    </div>
+                    <div class="gallery-caption position-absolute bottom-0 start-0 w-100 p-3 text-white">
+                        <h5 class="mb-1">Annual Conference</h5>
+                        <p class="mb-0 small">2024 Event</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Item 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="gallery-item position-relative overflow-hidden rounded">
+                    <img src="img/about.jpg" alt="Gallery" class="img-fluid w-100"
+                        style="height: 300px; object-fit: cover;">
+                    <div
+                        class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                        <a href="img/about.jpg" data-lightbox="gallery" class="btn btn-light rounded-circle">
+                            <i class="fas fa-eye"></i>
+                        </a>
+                    </div>
+                    <div class="gallery-caption position-absolute bottom-0 start-0 w-100 p-3 text-white">
+                        <h5 class="mb-1">Team Meeting</h5>
+                        <p class="mb-0 small">Staff Event</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Item 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="gallery-item position-relative overflow-hidden rounded">
+                    <img src="img/carousel-1.jpg" alt="Gallery" class="img-fluid w-100"
+                        style="height: 300px; object-fit: cover;">
+                    <div
+                        class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                        <a href="img/carousel-1.jpg" data-lightbox="gallery" class="btn btn-light rounded-circle">
+                            <i class="fas fa-eye"></i>
+                        </a>
+                    </div>
+                    <div class="gallery-caption position-absolute bottom-0 start-0 w-100 p-3 text-white">
+                        <h5 class="mb-1">Workshop Session</h5>
+                        <p class="mb-0 small">Training Program</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Item 4 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="gallery-item position-relative overflow-hidden rounded">
+                    <img src="img/carousel-2.jpg" alt="Gallery" class="img-fluid w-100"
+                        style="height: 300px; object-fit: cover;">
+                    <div
+                        class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                        <a href="img/carousel-2.jpg" data-lightbox="gallery" class="btn btn-light rounded-circle">
+                            <i class="fas fa-eye"></i>
+                        </a>
+                    </div>
+                    <div class="gallery-caption position-absolute bottom-0 start-0 w-100 p-3 text-white">
+                        <h5 class="mb-1">Infrastructure Setup</h5>
+                        <p class="mb-0 small">Network Installation</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Item 5 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="gallery-item position-relative overflow-hidden rounded">
+                    <img src="img/gallery2.png" alt="Gallery" class="img-fluid w-100"
+                        style="height: 300px; object-fit: cover;">
+                    <div
+                        class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                        <a href="img/gallery2.png" data-lightbox="gallery" class="btn btn-light rounded-circle">
+                            <i class="fas fa-eye"></i>
+                        </a>
+                    </div>
+                    <div class="gallery-caption position-absolute bottom-0 start-0 w-100 p-3 text-white">
+                        <h5 class="mb-1">Team Building</h5>
+                        <p class="mb-0 small">Staff Activities</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Item 6 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="gallery-item position-relative overflow-hidden rounded">
+                    <img src="img/fact-bg.jpg" alt="Gallery" class="img-fluid w-100"
+                        style="height: 300px; object-fit: cover;">
+                    <div
+                        class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                        <a href="img/fact-bg.jpg" data-lightbox="gallery" class="btn btn-light rounded-circle">
+                            <i class="fas fa-eye"></i>
+                        </a>
+                    </div>
+                    <div class="gallery-caption position-absolute bottom-0 start-0 w-100 p-3 text-white">
+                        <h5 class="mb-1">Annual Gala</h5>
+                        <p class="mb-0 small">Awards Ceremony</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Item 7 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="gallery-item position-relative overflow-hidden rounded">
+                    <img src="img/ceo.png" alt="Gallery" class="img-fluid w-100"
+                        style="height: 300px; object-fit: cover;">
+                    <div
+                        class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                        <a href="img/ceo.png" data-lightbox="gallery" class="btn btn-light rounded-circle">
+                            <i class="fas fa-eye"></i>
+                        </a>
+                    </div>
+                    <div class="gallery-caption position-absolute bottom-0 start-0 w-100 p-3 text-white">
+                        <h5 class="mb-1">CEO Welcome</h5>
+                        <p class="mb-0 small">Leadership</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Item 8 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="gallery-item position-relative overflow-hidden rounded">
+                    <img src="img/team-1.jpg" alt="Gallery" class="img-fluid w-100"
+                        style="height: 300px; object-fit: cover;">
+                    <div
+                        class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                        <a href="img/team-1.jpg" data-lightbox="gallery" class="btn btn-light rounded-circle">
+                            <i class="fas fa-eye"></i>
+                        </a>
+                    </div>
+                    <div class="gallery-caption position-absolute bottom-0 start-0 w-100 p-3 text-white">
+                        <h5 class="mb-1">Technical Team</h5>
+                        <p class="mb-0 small">Our Staff</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Item 9 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="gallery-item position-relative overflow-hidden rounded">
+                    <img src="img/team-2.jpg" alt="Gallery" class="img-fluid w-100"
+                        style="height: 300px; object-fit: cover;">
+                    <div
+                        class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                        <a href="img/team-2.jpg" data-lightbox="gallery" class="btn btn-light rounded-circle">
+                            <i class="fas fa-eye"></i>
+                        </a>
+                    </div>
+                    <div class="gallery-caption position-absolute bottom-0 start-0 w-100 p-3 text-white">
+                        <h5 class="mb-1">Support Team</h5>
+                        <p class="mb-0 small">Customer Service</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Load More Button -->
+        <div class="text-center mt-5">
+            <button class="btn btn-primary rounded-pill px-5 py-3">
+                <i class="fas fa-plus me-2"></i> Load More Photos
+            </button>
+        </div>
+    </div>
+
+    <!-- Video Section -->
+    <div class="container-fluid py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h4 class="text-uppercase text-primary">Videos</h4>
+                <h2 class="display-4 fw-bold">Watch Our Videos</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="video-item position-relative rounded overflow-hidden">
+                        <img src="img/carousel-1.jpg" alt="Video Thumbnail" class="img-fluid w-100"
+                            style="height: 300px; object-fit: cover;">
+                        <div class="video-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+                            style="background: rgba(0,0,0,0.5);">
+                            <a href="#" class="btn btn-light rounded-circle btn-lg">
+                                <i class="fas fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h5 class="mt-3">TERNET Introduction Video</h5>
+                    <p class="text-muted">Learn about TERNET's mission and services</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="video-item position-relative rounded overflow-hidden">
+                        <img src="img/carousel-2.jpg" alt="Video Thumbnail" class="img-fluid w-100"
+                            style="height: 300px; object-fit: cover;">
+                        <div class="video-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+                            style="background: rgba(0,0,0,0.5);">
+                            <a href="#" class="btn btn-light rounded-circle btn-lg">
+                                <i class="fas fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h5 class="mt-3">Network Infrastructure Tour</h5>
+                    <p class="text-muted">See our state-of-the-art facilities</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid footer py-5">
+        <div class="container py-5">
+            <div class="row g-5 mb-5">
+                <div class="col-lg-7">
+                    <div class="position-relative mx-auto">
+                        <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text"
+                            placeholder="Your email">
+                        <button type="button"
+                            class="btn btn-secondary rounded-pill position-absolute top-0 end-0 py-2 px-4 mt-2 me-2">Subscribe</button>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="d-flex justify-content-center">
+                        <a class="btn btn-secondary btn-md-square rounded-circle me-2" href=""><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-secondary btn-md-square rounded-circle me-2" href=""><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-secondary btn-md-square rounded-circle me-2" href=""><i
+                                class="fab fa-instagram"></i></a>
+                        <a class="btn btn-secondary btn-md-square rounded-circle" href=""><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-3">
+                    <h4 class="text-white mb-4">About Us</h4>
+                    <p class="mb-3">TERNET connects Tanzania's higher learning institutions for shared education and
+                        research resources.</p>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h4 class="text-white mb-4">Quick Links</h4>
+                    <a href="#" class="d-block mb-2"><i class="fas fa-angle-right me-2"></i> Home</a>
+                    <a href="#" class="d-block mb-2"><i class="fas fa-angle-right me-2"></i> Services</a>
+                    <a href="#" class="d-block mb-2"><i class="fas fa-angle-right me-2"></i> Membership</a>
+                    <a href="#" class="d-block"><i class="fas fa-angle-right me-2"></i> Contact</a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h4 class="text-white mb-4">Business Hours</h4>
+                    <p class="mb-2">Mon - Fri: 9:00 AM - 7:00 PM</p>
+                    <p class="mb-0">Sat: 10:00 AM - 5:00 PM</p>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h4 class="text-white mb-4">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-2"></i> Kilimahewa Road, UDSM</p>
+                    <p class="mb-2"><i class="fas fa-phone me-2"></i> +255 738 353 995</p>
+                    <p class="mb-0"><i class="fas fa-envelope me-2"></i> info@ternet.co.tz</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <span>&copy; <span id="year"></span> TERNET. All rights reserved.</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="me-3">Privacy</a>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary btn-lg-square rounded-circle back-to-top">
+        <i class="fa fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
