@@ -1994,6 +1994,55 @@ h6 {
     color: #213469 !important;
 }
 
+.training-benefits h5 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Training Card Details */
+.training-card .training-status {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.training-card .training-status.completed {
+    background: rgba(25, 135, 84, 0.1);
+    color: #198754;
+}
+
+.training-card .training-status.upcoming {
+    background: rgba(255, 193, 7, 0.1);
+    color: #ffc107;
+}
+
+.training-card .training-info {
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+.training-card .training-info .info-item {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.training-card .training-info .info-item:last-child {
+    margin-bottom: 0;
+}
+
+.training-card .training-info .info-item i {
+    color: #213469;
+    width: 20px;
+}
+
 /* CTA Section */
 .cta {
     background: linear-gradient(135deg, #213469 0%, #0d6efd90 100%);
