@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>TERNET - </title>
+    <title>TERNET - Services</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -29,10 +29,13 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
 </head>
 
 <body>
-
+    <div class="cursor-dot"></div>
+    <div class="cursor-trail"></div>
     <!-- Spinner Start -->
     <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -42,32 +45,74 @@
     </div>
     <!-- Spinner End -->
 
-    <!-- Top Navbar Start -->
-    <div class="container-fluid bg-topnavbar text-white pt-2 pb-2">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-center">
+      <!-- FIRST TOP  Start-->
+    <div class="container-fluid bg-topnavbar">
 
-                <div class="d-flex gap-4">
-                    <a href="tel:+255612345678" class="text-white text-decoration-none d-flex align-items-center gap-2">
-                        <span>[255] 738 353 995</span>
-                    </a>
-                    <a href="mailto:info@ternet.co.tz"
-                        class="text-white text-decoration-none d-flex align-items-center gap-2">
-                        <span>info@ternet.co.tz</span>
-                    </a>
-                </div>
-                <!-- Right Side: Social Icons -->
-                <div class="d-flex gap-3">
-                    <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+        <div class="row">
+
+            <div class="col-12 col-md-6 text-white py-2" style="font-size: 12px;">
+                <div class="row g-3 align-items-center">
+
+                    <div class="col-6" style="border-right: 1px solid #fff;">
+                        <div class="d-flex align-items-start gap-2" style="padding-right: 10px;">
+                            <i class="far fa-clock mt-1"></i>
+                            <span>Working Hrs: Mon - Fri : 8.30 AM - 4.30 PM., Sat & Sun Closed.</span>
+                        </div>
+                    </div>
+
+                    <div class="col-6" style="border-right: 1px solid #fff;">
+                        <div class="d-flex align-items-start gap-2">
+                            <i class="fas fa-map-marker-alt mt-1"></i>
+                            <span>Kilimahewa Road, House No.2, UDSM, Dar Es Salaam, Tanzania</span>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+
+            <div class="col-12 col-md-6  text-white py-2" style="font-size: 12px;">
+                <div class="row g-3 align-items-center">
+
+                    <div class="col-4" style="border-right: 1px solid #fff;">
+                        <a href="tel:+255612345678"
+                            class="text-white text-decoration-none d-flex align-items-center gap-2"
+                            style="padding-right: 15px;">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>[255] 738 353 995</span>
+                        </a>
+                    </div>
+
+                    <div class="col-3" style="border-right: 1px solid #fff;">
+                        <a href="mailto:info@ternet.co.tz"
+                            class="text-white text-decoration-none d-flex align-items-center gap-2"
+                            style="padding-right: 15px;">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@ternet.co.tz</span>
+                        </a>
+                    </div>
+
+                    <div class="col-5 ">
+                        <div class="d-flex align-items-center gap-3">
+                            <a href="#" class="text-white"><i class="fab fa-facebook-f"
+                                    style="border-right: 1px solid #fff; padding-right: 10px;"></i></a>
+                            <a href="#" class="text-white"><i class="fab fa-twitter"
+                                    style="border-right: 1px solid #fff; padding-right: 10px;"></i></a>
+                            <a href="#" class="text-white"><i class="fab fa-instagram"
+                                    style="border-right: 1px solid #fff; padding-right: 10px;"></i></a>
+                            <a href="#" class="text-white"><i class="fab fa-linkedin-in"
+                                    style="border-right: 1px solid #fff; padding-right: 10px;"></i></a>
+                            <a href="#" class="text-white"><i class="fab fa-youtube"
+                                    style="border-right: 1px solid #fff; padding-right: 10px;"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
     </div>
-    <!-- Top Navbar End -->
+    <!-- FIRST TOP End -->
+
 
     <!-- Navbar & Hero Start -->
     <div class="container-fluid position-relative p-0">
@@ -152,500 +197,533 @@
             </nav>
         </div>
 
-    <!-- Fact Counter -->
-    <div class="container-fluid counter py-5">
-        <div class="container py-5">
-            <h4 class="text-white display-4 mb-4 wow fadeInDown text-center" data-wow-delay="0.1s">Our Services</h4>
+        <!-- Fact Counter -->
+        <div class="container-fluid counter py-5">
+            <div class="container py-5">
+                <h4 class="text-white display-4 mb-4 wow fadeInDown text-center" data-wow-delay="0.1s">Our Services</h4>
 
-            <div class="row g-5">
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="counter-item">
-                        <div class="counter-item-icon mx-auto">
-                            <i class="fas fa-wifi fa-3x text-white"></i>
-                        </div>
-                        <h4 class="text-white my-4">Eduroam Sites</h4>
-                        <div class="counter-counting">
-                            <span class="text-white fs-2 fw-bold" data-toggle="counter-up">156</span>
-                            <span class="h1 fw-bold text-white">+</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="counter-item">
-                        <div class="counter-item-icon mx-auto">
-                            <i class="fas fa-university fa-3x text-white"></i>
-                        </div>
-                        <h4 class="text-white my-4">Connected Campuses</h4>
-                        <div class="counter-counting">
-                            <span class="text-white fs-2 fw-bold" data-toggle="counter-up">42</span>
-                            <span class="h1 fw-bold text-white">+</span>
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="counter-item">
+                            <div class="counter-item-icon mx-auto">
+                                <i class="fas fa-wifi fa-3x text-white"></i>
+                            </div>
+                            <h4 class="text-white my-4">Eduroam Sites</h4>
+                            <div class="counter-counting">
+                                <span class="text-white fs-2 fw-bold" data-toggle="counter-up">156</span>
+                                <span class="h1 fw-bold text-white">+</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
-                    <div class="counter-item">
-                        <div class="counter-item-icon mx-auto">
-                            <i class="fas fa-user-graduate fa-3x text-white"></i>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="counter-item">
+                            <div class="counter-item-icon mx-auto">
+                                <i class="fas fa-university fa-3x text-white"></i>
+                            </div>
+                            <h4 class="text-white my-4">Connected Campuses</h4>
+                            <div class="counter-counting">
+                                <span class="text-white fs-2 fw-bold" data-toggle="counter-up">42</span>
+                                <span class="h1 fw-bold text-white">+</span>
+                            </div>
                         </div>
-                        <h4 class="text-white my-4">Trained Persons</h4>
-                        <div class="counter-counting">
-                            <span class="text-white fs-2 fw-bold" data-toggle="counter-up">2500</span>
-                            <span class="h1 fw-bold text-white">+</span>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="counter-item">
+                            <div class="counter-item-icon mx-auto">
+                                <i class="fas fa-user-graduate fa-3x text-white"></i>
+                            </div>
+                            <h4 class="text-white my-4">Trained Persons</h4>
+                            <div class="counter-counting">
+                                <span class="text-white fs-2 fw-bold" data-toggle="counter-up">2500</span>
+                                <span class="h1 fw-bold text-white">+</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Fact Counter -->
+        <!-- Fact Counter -->
 
-    <!-- Service Start -->
-    <div class="container-fluid service bg-light overflow-hidden py-5">
-        <div class="container py-5">
+        <!-- Particles JS Container -->
+        <div id="particles-js"></div>
 
-            <div class="row g-4">
+        <!-- Service Start -->
+        <div class="container-fluid service bg-light overflow-hidden py-5">
+            <div class="container py-5">
 
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="service-card rounded h-100">
-                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Internet Connectivity">
-                        <div class="service-content bg-white p-4">
-                            <h4 class="mb-3">Internet Connectivity</h4>
-                            <p class="mb-0">Internet connectivity is the primary form of intervention to enable easy
-                                collaboration among education and research institutions.</p>
+                <div class="row g-4">
+
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-card rounded h-100">
+                            <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Internet Connectivity">
+                            <div class="service-content bg-white p-4">
+                                <h4 class="mb-3">Internet Connectivity</h4>
+                                <p class="mb-0">Internet connectivity is the primary form of intervention to enable easy
+                                    collaboration among education and research institutions.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-card rounded h-100">
-                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="eduroam">
-                        <div class="service-content bg-white p-4">
-                            <h4 class="mb-3">eduroam</h4>
-                            <p class="mb-0">eduroam provides simple, easy, secure connectivity from thousands of
-                                hotspots across more than 100 countries.</p>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-card rounded h-100">
+                            <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="eduroam">
+                            <div class="service-content bg-white p-4">
+                                <h4 class="mb-3">eduroam</h4>
+                                <p class="mb-0">eduroam provides simple, easy, secure connectivity from thousands of
+                                    hotspots across more than 100 countries.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="service-card rounded h-100">
-                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Metro eduroam">
-                        <div class="service-content bg-white p-4">
-                            <h4 class="mb-3">Metro eduroam</h4>
-                            <p class="mb-0">Metro eduroam simply means eduroam within the city, outside the campuses of
-                                institutions.</p>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-card rounded h-100">
+                            <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Metro eduroam">
+                            <div class="service-content bg-white p-4">
+                                <h4 class="mb-3">Metro eduroam</h4>
+                                <p class="mb-0">Metro eduroam simply means eduroam within the city, outside the campuses
+                                    of
+                                    institutions.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="service-card rounded h-100">
-                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="eduroam on the Go">
-                        <div class="service-content bg-white p-4">
-                            <h4 class="mb-3">eduroam on the Go</h4>
-                            <p class="mb-0">eduroam on the Go is a pocket-size routing device specially made to enable
-                                researchers and university staff connect to eduroam and the Internet anytime, anywhere.
-                            </p>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-card rounded h-100">
+                            <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="eduroam on the Go">
+                            <div class="service-content bg-white p-4">
+                                <h4 class="mb-3">eduroam on the Go</h4>
+                                <p class="mb-0">eduroam on the Go is a pocket-size routing device specially made to
+                                    enable
+                                    researchers and university staff connect to eduroam and the Internet anytime,
+                                    anywhere.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-card rounded h-100">
-                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Zero-rated Mobile Access">
-                        <div class="service-content bg-white p-4">
-                            <h4 class="mb-3">Zero-rated Mobile Access</h4>
-                            <p class="mb-0">Students and staff from our member institutions don't need to load data
-                                bundles to access their websites, e-learning portals and all sites in the RENU domain.
-                            </p>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-card rounded h-100">
+                            <img src="img/eduroam.png" class="img-fluid w-100 rounded-top"
+                                alt="Zero-rated Mobile Access">
+                            <div class="service-content bg-white p-4">
+                                <h4 class="mb-3">Zero-rated Mobile Access</h4>
+                                <p class="mb-0">Students and staff from our member institutions don't need to load data
+                                    bundles to access their websites, e-learning portals and all sites in the RENU
+                                    domain.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="service-card rounded h-100">
-                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Moodle LMS">
-                        <div class="service-content bg-white p-4">
-                            <h4 class="mb-3">Moodle LMS</h4>
-                            <p class="mb-0">The Learning Management System (LMS) allows institutional administrators to
-                                create, organize, and manage various types of learning materials.</p>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-card rounded h-100">
+                            <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Moodle LMS">
+                            <div class="service-content bg-white p-4">
+                                <h4 class="mb-3">Moodle LMS</h4>
+                                <p class="mb-0">The Learning Management System (LMS) allows institutional administrators
+                                    to
+                                    create, organize, and manage various types of learning materials.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="service-card rounded h-100">
-                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Web Conferencing">
-                        <div class="service-content bg-white p-4">
-                            <h4 class="mb-3">Web Conferencing</h4>
-                            <p class="mb-0">RENU offers web conferencing as a service to enable education and research
-                                institutions to hold meetings, conferences, seminars and virtual classes wherever.</p>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-card rounded h-100">
+                            <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Web Conferencing">
+                            <div class="service-content bg-white p-4">
+                                <h4 class="mb-3">Web Conferencing</h4>
+                                <p class="mb-0">RENU offers web conferencing as a service to enable education and
+                                    research
+                                    institutions to hold meetings, conferences, seminars and virtual classes wherever.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-card rounded h-100">
-                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="RENU Cloud">
-                        <div class="service-content bg-white p-4">
-                            <h4 class="mb-3">RENU Cloud</h4>
-                            <p class="mb-0">RENU Cloud is good for member institutions that wish to have offsite
-                                disaster recovery solutions without incurring the heavy costs of building offsite data
-                                centres and buying server hardware.</p>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-card rounded h-100">
+                            <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="RENU Cloud">
+                            <div class="service-content bg-white p-4">
+                                <h4 class="mb-3">RENU Cloud</h4>
+                                <p class="mb-0">RENU Cloud is good for member institutions that wish to have offsite
+                                    disaster recovery solutions without incurring the heavy costs of building offsite
+                                    data
+                                    centres and buying server hardware.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="service-card rounded h-100">
-                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Colocation">
-                        <div class="service-content bg-white p-4">
-                            <h4 class="mb-3">Colocation</h4>
-                            <p class="mb-0">Institutions are able to rent space in any of RENU’s data centers for their
-                                servers and other computing hardware. This facility could be used for safe storage,
-                                offsite backup, etc.</p>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-card rounded h-100">
+                            <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Colocation">
+                            <div class="service-content bg-white p-4">
+                                <h4 class="mb-3">Colocation</h4>
+                                <p class="mb-0">Institutions are able to rent space in any of RENU’s data centers for
+                                    their
+                                    servers and other computing hardware. This facility could be used for safe storage,
+                                    offsite backup, etc.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="service-card rounded h-100">
-                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Domain Registration">
-                        <div class="service-content bg-white p-4">
-                            <h4 class="mb-3">Domain Registration</h4>
-                            <p class="mb-0">Domain registration is the process of acquiring a unique Internet address
-                                for a website. This address, known as a domain name, serves as the online identity for a
-                                particular entity or institution.</p>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-card rounded h-100">
+                            <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Domain Registration">
+                            <div class="service-content bg-white p-4">
+                                <h4 class="mb-3">Domain Registration</h4>
+                                <p class="mb-0">Domain registration is the process of acquiring a unique Internet
+                                    address
+                                    for a website. This address, known as a domain name, serves as the online identity
+                                    for a
+                                    particular entity or institution.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-card rounded h-100">
-                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Domain Name Hosting">
-                        <div class="service-content bg-white p-4">
-                            <h4 class="mb-3">Domain Name Hosting</h4>
-                            <p class="mb-0">This is a free DNS hosting service that hosts registered institutional
-                                domains that can be used to create websites and email addresses from the safety,
-                                reliability and speed of the RENU network.</p>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-card rounded h-100">
+                            <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Domain Name Hosting">
+                            <div class="service-content bg-white p-4">
+                                <h4 class="mb-3">Domain Name Hosting</h4>
+                                <p class="mb-0">This is a free DNS hosting service that hosts registered institutional
+                                    domains that can be used to create websites and email addresses from the safety,
+                                    reliability and speed of the RENU network.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="service-card rounded h-100">
-                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Email Hosting">
-                        <div class="service-content bg-white p-4">
-                            <h4 class="mb-3">Email Hosting</h4>
-                            <p class="mb-0">The RENU Mail Hosting service supports mainly institutions that lack
-                                dedicated or experienced IT teams.</p>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-card rounded h-100">
+                            <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Email Hosting">
+                            <div class="service-content bg-white p-4">
+                                <h4 class="mb-3">Email Hosting</h4>
+                                <p class="mb-0">The RENU Mail Hosting service supports mainly institutions that lack
+                                    dedicated or experienced IT teams.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="service-card rounded h-100">
-                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Web Hosting">
-                        <div class="service-content bg-white p-4">
-                            <h4 class="mb-3">Web Hosting</h4>
-                            <p class="mb-0">RENU offers web hosting services to institutions and individuals carrying
-                                out research and offering education services.</p>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-card rounded h-100">
+                            <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Web Hosting">
+                            <div class="service-content bg-white p-4">
+                                <h4 class="mb-3">Web Hosting</h4>
+                                <p class="mb-0">RENU offers web hosting services to institutions and individuals
+                                    carrying
+                                    out research and offering education services.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-card rounded h-100">
-                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Web Development">
-                        <div class="service-content bg-white p-4">
-                            <h4 class="mb-3">Web Development</h4>
-                            <p class="mb-0">Web development refers to building and managing websites using web
-                                technologies such as HTML, CSS, JavaScript, PHP, and content management systems.</p>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-card rounded h-100">
+                            <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Web Development">
+                            <div class="service-content bg-white p-4">
+                                <h4 class="mb-3">Web Development</h4>
+                                <p class="mb-0">Web development refers to building and managing websites using web
+                                    technologies such as HTML, CSS, JavaScript, PHP, and content management systems.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="service-card rounded h-100">
-                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="eduroam">
-                        <div class="service-content bg-white p-4">
-                            <h4 class="mb-3">eduroam</h4>
-                            <p class="mb-0">eduroam (education roaming) is a secure, global network access solution for
-                                research and education institutions .</p>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-card rounded h-100">
+                            <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="eduroam">
+                            <div class="service-content bg-white p-4">
+                                <h4 class="mb-3">eduroam</h4>
+                                <p class="mb-0">eduroam (education roaming) is a secure, global network access solution
+                                    for
+                                    research and education institutions .</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="service-card rounded h-100">
-                        <img src="img/eduVPN.png" class="img-fluid w-100 rounded-top" alt="eduVPN">
-                        <div class="service-content bg-white p-4">
-                            <h4 class="mb-3">eduVPN</h4>
-                            <p class="mb-0">eduVPN sets up an encrypted path between one's device and their
-                                organisation's network, enabling secure connectivity over unsecure networks.</p>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-card rounded h-100">
+                            <img src="img/eduVPN.png" class="img-fluid w-100 rounded-top" alt="eduVPN">
+                            <div class="service-content bg-white p-4">
+                                <h4 class="mb-3">eduVPN</h4>
+                                <p class="mb-0">eduVPN sets up an encrypted path between one's device and their
+                                    organisation's network, enabling secure connectivity over unsecure networks.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-card rounded h-100">
-                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="eduroam">
-                        <div class="service-content bg-white p-4">
-                            <h4 class="mb-3">eduroam</h4>
-                            <p class="mb-0">eduroam (education roaming) is a secure, global network access solution for
-                                research and education institutions.</p>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-card rounded h-100">
+                            <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="eduroam">
+                            <div class="service-content bg-white p-4">
+                                <h4 class="mb-3">eduroam</h4>
+                                <p class="mb-0">eduroam (education roaming) is a secure, global network access solution
+                                    for
+                                    research and education institutions.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="service-card rounded h-100">
-                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Cybersecurity">
-                        <div class="service-content bg-white p-4">
-                            <h4 class="mb-3">Cybersecurity</h4>
-                            <p class="mb-0">We handle cybersecurity incidents of the institutions connected to the RENU
-                                network.</p>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-card rounded h-100">
+                            <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Cybersecurity">
+                            <div class="service-content bg-white p-4">
+                                <h4 class="mb-3">Cybersecurity</h4>
+                                <p class="mb-0">We handle cybersecurity incidents of the institutions connected to the
+                                    RENU
+                                    network.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="service-card rounded h-100">
-                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Anti-plagiarism Software">
-                        <div class="service-content bg-white p-4">
-                            <h4 class="mb-3">Anti-plagiarism Software</h4>
-                            <p class="mb-0">Anti-plagiarism software evaluates work from researchers and learners, and
-                                is very good for institutions to maintain academic integrity.</p>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-card rounded h-100">
+                            <img src="img/eduroam.png" class="img-fluid w-100 rounded-top"
+                                alt="Anti-plagiarism Software">
+                            <div class="service-content bg-white p-4">
+                                <h4 class="mb-3">Anti-plagiarism Software</h4>
+                                <p class="mb-0">Anti-plagiarism software evaluates work from researchers and learners,
+                                    and
+                                    is very good for institutions to maintain academic integrity.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-card rounded h-100">
-                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="RENU Identity Federation">
-                        <div class="service-content bg-white p-4">
-                            <h4 class="mb-3">RENU Identity Federation (RIF)</h4>
-                            <p class="mb-0">RIF provides a simple avenue for users from research and education
-                                institutions to securely and reliably access and share resources locally and globally.
-                            </p>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-card rounded h-100">
+                            <img src="img/eduroam.png" class="img-fluid w-100 rounded-top"
+                                alt="RENU Identity Federation">
+                            <div class="service-content bg-white p-4">
+                                <h4 class="mb-3">RENU Identity Federation (RIF)</h4>
+                                <p class="mb-0">RIF provides a simple avenue for users from research and education
+                                    institutions to securely and reliably access and share resources locally and
+                                    globally.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="service-card rounded h-100">
-                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Capacity Building">
-                        <div class="service-content bg-white p-4">
-                            <h4 class="mb-3">Capacity Building</h4>
-                            <p class="mb-0">Our program is designed to equip the network and systems engineers of member
-                                institutions with the skills and confidence to set up, manage and maintain clean,
-                                robust, and efficient networks.</p>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-card rounded h-100">
+                            <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Capacity Building">
+                            <div class="service-content bg-white p-4">
+                                <h4 class="mb-3">Capacity Building</h4>
+                                <p class="mb-0">Our program is designed to equip the network and systems engineers of
+                                    member
+                                    institutions with the skills and confidence to set up, manage and maintain clean,
+                                    robust, and efficient networks.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="service-card rounded h-100">
-                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Network Monitoring">
-                        <div class="service-content bg-white p-4">
-                            <h4 class="mb-3">Network Monitoring</h4>
-                            <p class="mb-0">RENU offers all connected member institutions 24-hour network monitoring
-                                with real-time downtime notifications, updates, traffic utilization graphs, and monthly
-                                downtime reports.</p>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-card rounded h-100">
+                            <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Network Monitoring">
+                            <div class="service-content bg-white p-4">
+                                <h4 class="mb-3">Network Monitoring</h4>
+                                <p class="mb-0">RENU offers all connected member institutions 24-hour network monitoring
+                                    with real-time downtime notifications, updates, traffic utilization graphs, and
+                                    monthly
+                                    downtime reports.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-card rounded h-100">
-                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Open Source Mirror">
-                        <div class="service-content bg-white p-4">
-                            <h4 class="mb-3">Open Source Mirror</h4>
-                            <p class="mb-0">Institutions connected to the RENU network can access various applications,
-                                operating system updates, and patches within Uganda, helping save international
-                                bandwidth.</p>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-card rounded h-100">
+                            <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="Open Source Mirror">
+                            <div class="service-content bg-white p-4">
+                                <h4 class="mb-3">Open Source Mirror</h4>
+                                <p class="mb-0">Institutions connected to the RENU network can access various
+                                    applications,
+                                    operating system updates, and patches within Uganda, helping save international
+                                    bandwidth.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="service-card rounded h-100">
-                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top"
-                            alt="Enterprise Resource Planning">
-                        <div class="service-content bg-white p-4">
-                            <h4 class="mb-3">Enterprise Resource Planning</h4>
-                            <p class="mb-0">This is an all-in-one comprehensive platform known as RENU 360 that enables
-                                institutions to seamlessly manage and streamline day-to-day institutional operations.
-                            </p>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-card rounded h-100">
+                            <img src="img/eduroam.png" class="img-fluid w-100 rounded-top"
+                                alt="Enterprise Resource Planning">
+                            <div class="service-content bg-white p-4">
+                                <h4 class="mb-3">Enterprise Resource Planning</h4>
+                                <p class="mb-0">This is an all-in-one comprehensive platform known as RENU 360 that
+                                    enables
+                                    institutions to seamlessly manage and streamline day-to-day institutional
+                                    operations.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="service-card rounded h-100">
-                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top"
-                            alt="Campus Network as a Service">
-                        <div class="service-content bg-white p-4">
-                            <h4 class="mb-3">Campus Network as a Service (CNaaS)</h4>
-                            <p class="mb-0">CNaaS enables institutions to fully or partly outsource setting up,
-                                monitoring and management of campus networks to maintain clean and robust networks.</p>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-card rounded h-100">
+                            <img src="img/eduroam.png" class="img-fluid w-100 rounded-top"
+                                alt="Campus Network as a Service">
+                            <div class="service-content bg-white p-4">
+                                <h4 class="mb-3">Campus Network as a Service (CNaaS)</h4>
+                                <p class="mb-0">CNaaS enables institutions to fully or partly outsource setting up,
+                                    monitoring and management of campus networks to maintain clean and robust networks.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-card rounded h-100">
-                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top"
-                            alt="Solar-powered Internet Routers">
-                        <div class="service-content bg-white p-4">
-                            <h4 class="mb-3">Solar-powered Internet Routers</h4>
-                            <p class="mb-0">RENU partnered with Mesh++ to manufacture solar-powered Internet routers in
-                                Uganda, combining renewable energy with advanced connectivity technology.</p>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-card rounded h-100">
+                            <img src="img/eduroam.png" class="img-fluid w-100 rounded-top"
+                                alt="Solar-powered Internet Routers">
+                            <div class="service-content bg-white p-4">
+                                <h4 class="mb-3">Solar-powered Internet Routers</h4>
+                                <p class="mb-0">RENU partnered with Mesh++ to manufacture solar-powered Internet routers
+                                    in
+                                    Uganda, combining renewable energy with advanced connectivity technology.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="service-card rounded h-100">
-                        <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="RENU Backup Service">
-                        <div class="service-content bg-white p-4">
-                            <h4 class="mb-3">RENU Backup Service</h4>
-                            <p class="mb-0">RENU Backup Service offers a secure backup solution for protecting
-                                institutional data and ensuring reliable recovery when needed.</p>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-card rounded h-100">
+                            <img src="img/eduroam.png" class="img-fluid w-100 rounded-top" alt="RENU Backup Service">
+                            <div class="service-content bg-white p-4">
+                                <h4 class="mb-3">RENU Backup Service</h4>
+                                <p class="mb-0">RENU Backup Service offers a secure backup solution for protecting
+                                    institutional data and ensuring reliable recovery when needed.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
+                </div>
             </div>
         </div>
-    </div>
-    <!-- Service End -->
+        <!-- Service End -->
 
 
-    <!-- Footer Start -->
-    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
-        <div class="container py-5">
-            <div class="row g-5 mb-5 align-items-center">
-                <div class="col-lg-7">
-                    <div class="position-relative mx-auto">
-                        <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text"
-                            placeholder="Email address to Subscribe">
-                        <button type="button"
-                            class="btn btn-secondary rounded-pill position-absolute top-0 end-0 py-2 px-4 mt-2 me-2">Subscribe</button>
-                    </div>
-                </div>
-                <div class="col-lg-5">
-                    <div class="d-flex align-items-center justify-content-center justify-content-lg-end">
-                        <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i
-                                class="fab fa-twitter"></i></a>
-                        <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i
-                                class="fab fa-instagram"></i></a>
-                        <a class="btn btn-secondary btn-md-square rounded-circle me-0" href=""><i
-                                class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="row g-5">
-                <div class="col-md-6 col-lg-6 col-xl-3">
-                    <div class="footer-item d-flex flex-column">
-                        <div class="footer-item">
-                            <h3 class="text-white mb-4"><i
-                                    class="fas fa-hand-holding-water text-primary me-3"></i>TERNET</h3>
-                            <p class="mb-3">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum dolor sit
-                                amet, consectetur adipiscing elit consectetur adipiscing elit.</p>
-                        </div>
-                        <div class="position-relative">
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5 mb-5 align-items-center">
+                    <div class="col-lg-7">
+                        <div class="position-relative mx-auto">
                             <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text"
-                                placeholder="Enter your email">
+                                placeholder="Email address to Subscribe">
                             <button type="button"
-                                class="btn btn-secondary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
+                                class="btn btn-secondary rounded-pill position-absolute top-0 end-0 py-2 px-4 mt-2 me-2">Subscribe</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="d-flex align-items-center justify-content-center justify-content-lg-end">
+                            <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i
+                                    class="fab fa-twitter"></i></a>
+                            <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i
+                                    class="fab fa-instagram"></i></a>
+                            <a class="btn btn-secondary btn-md-square rounded-circle me-0" href=""><i
+                                    class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-6 col-xl-3">
-                    <div class="footer-item d-flex flex-column">
-                        <h4 class="text-white mb-4">About Us</h4>
-                        <a href="#"><i class="fas fa-angle-right me-2"></i> Why Choose Us</a>
-                        <a href="#"><i class="fas fa-angle-right me-2"></i> Free Water Bottles</a>
-                        <a href="#"><i class="fas fa-angle-right me-2"></i> Water Dispensers</a>
-                        <a href="#"><i class="fas fa-angle-right me-2"></i> Bottled Water Coolers</a>
-                        <a href="#"><i class="fas fa-angle-right me-2"></i> Contact us</a>
-                        <a href="#"><i class="fas fa-angle-right me-2"></i> Terms & Conditions</a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6 col-xl-3">
-                    <div class="footer-item d-flex flex-column">
-                        <h4 class="text-white mb-4">Business Hours</h4>
-                        <div class="mb-3">
-                            <h6 class="text-muted mb-0">Mon - Friday:</h6>
-                            <p class="text-white mb-0">09.00 am to 07.00 pm</p>
-                        </div>
-                        <div class="mb-3">
-                            <h6 class="text-muted mb-0">Saturday:</h6>
-                            <p class="text-white mb-0">10.00 am to 05.00 pm</p>
-                        </div>
-                        <div class="mb-3">
-                            <h6 class="text-muted mb-0">Vacation:</h6>
-                            <p class="text-white mb-0">All Sunday is our vacation</p>
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <div class="footer-item">
+                                <h3 class="text-white mb-4"><i
+                                        class="fas fa-hand-holding-water text-primary me-3"></i>TERNET</h3>
+                                <p class="mb-3">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum dolor
+                                    sit
+                                    amet, consectetur adipiscing elit consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="position-relative">
+                                <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text"
+                                    placeholder="Enter your email">
+                                <button type="button"
+                                    class="btn btn-secondary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-6 col-xl-3">
-                    <div class="footer-item d-flex flex-column">
-                        <h4 class="text-white mb-4">Contact Info</h4>
-                        <a href="#"><i class="fa fa-map-marker-alt me-2"></i> 123 Street, New York, USA</a>
-                        <a href="mailto:info@example.com"><i class="fas fa-envelope me-2"></i> info@example.com</a>
-                        <a href="mailto:info@example.com"><i class="fas fa-envelope me-2"></i> info@example.com</a>
-                        <a href="tel:+012 345 67890"><i class="fas fa-phone me-2"></i> +012 345 67890</a>
-                        <a href="tel:+012 345 67890" class="mb-3"><i class="fas fa-print me-2"></i> +012 345 67890</a>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-white mb-4">About Us</h4>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Why Choose Us</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Free Water Bottles</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Water Dispensers</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Bottled Water Coolers</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Contact us</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Terms & Conditions</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-white mb-4">Business Hours</h4>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Mon - Friday:</h6>
+                                <p class="text-white mb-0">09.00 am to 07.00 pm</p>
+                            </div>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Saturday:</h6>
+                                <p class="text-white mb-0">10.00 am to 05.00 pm</p>
+                            </div>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Vacation:</h6>
+                                <p class="text-white mb-0">All Sunday is our vacation</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-white mb-4">Contact Info</h4>
+                            <a href="#"><i class="fa fa-map-marker-alt me-2"></i> 123 Street, New York, USA</a>
+                            <a href="mailto:info@example.com"><i class="fas fa-envelope me-2"></i> info@example.com</a>
+                            <a href="mailto:info@example.com"><i class="fas fa-envelope me-2"></i> info@example.com</a>
+                            <a href="tel:+012 345 67890"><i class="fas fa-phone me-2"></i> +012 345 67890</a>
+                            <a href="tel:+012 345 67890" class="mb-3"><i class="fas fa-print me-2"></i> +012 345
+                                67890</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Footer End -->
+        <!-- Footer End -->
 
 
-    <!-- Copyright Start -->
-    <div class="container-fluid copyright py-4">
-        <div class="container">
-            <div class="row g-4 align-items-center">
-                <div class="col-md-6 text-center text-md-start mb-md-0">
-                    <span class="text-body"><a href="#" class="border-bottom text-white"><i
-                                class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right
-                        reserved.</span>
-                </div>
-                <div class="col-md-6 text-center text-md-end text-body">
-                    <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-                    <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-                    <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                    Designed By <a class="border-bottom text-white" href="https://htmlcodex.com">HTML Codex</a>
-                    Distributed By <a class="border-bottom text-white" href="https://themewagon.com">ThemeWagon</a>
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-body"><a href="#" class="border-bottom text-white"><i
+                                    class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right
+                            reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-body">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="border-bottom text-white" href="https://htmlcodex.com">HTML Codex</a>
+                        Distributed By <a class="border-bottom text-white" href="https://themewagon.com">ThemeWagon</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Copyright End -->
+        <!-- Copyright End -->
 
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-secondary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-secondary btn-lg-square rounded-circle back-to-top"><i
+                class="fa fa-arrow-up"></i></a>
 
 
-    <!-- JavaScript Libraries -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -1,7 +1,8 @@
 (function ($) {
     "use strict";
 
-      // tails
+
+    // tails
     const dot = document.querySelector(".cursor-dot");
     const trail = document.querySelector(".cursor-trail");
 
@@ -18,50 +19,54 @@
     // cursor
     const cursor = document.querySelector(".custom-cursor");
 
-    document.addEventListener("mousemove", function (e) {
-        cursor.style.left = e.clientX + "px";
-        cursor.style.top = e.clientY + "px";
-    });
+    if (cursor) {
+        document.addEventListener("mousemove", function (e) {
+            cursor.style.left = e.clientX + "px";
+            cursor.style.top = e.clientY + "px";
+        });
+    }
 
     // Particles
-    particlesJS("particles-js", {
-        particles: {
-            number: { value: 80 },
-            color: { value: "#ffffff" },
-            shape: { type: "circle" },
-            opacity: { value: 0.5 },
-            size: { value: 3 },
-            line_linked: {
-                enable: true,
-                distance: 150,
-                color: "#ffffff",
-                opacity: 0.4,
-                width: 1
-            },
-            move: {
-                enable: true,
-                speed: 2
-            }
-        },
-        interactivity: {
-            events: {
-                onhover: {
+    if (document.getElementById("particles-js")) {
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 80 },
+                color: { value: "#ffffff" },
+                shape: { type: "circle" },
+                opacity: { value: 0.5 },
+                size: { value: 3 },
+                line_linked: {
                     enable: true,
-                    mode: "grab"
+                    distance: 150,
+                    color: "#ffffff",
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 2
                 }
             },
-            modes: {
-                grab: {
-                    distance: 200,
-                    line_linked: {
-                        opacity: 1
+            interactivity: {
+                events: {
+                    onhover: {
+                        enable: true,
+                        mode: "grab"
+                    }
+                },
+                modes: {
+                    grab: {
+                        distance: 200,
+                        line_linked: {
+                            opacity: 1
+                        }
                     }
                 }
             }
-        }
-    });
+        });
+    }
 
-    
+
     // Spinner
     var spinner = function () {
         setTimeout(function () {
