@@ -83,6 +83,64 @@ h6 {
 .service-accordion .accordion-item {
     background: #fff;
     border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+/* AI Glow Effect on Hover */
+.service-accordion .accordion-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(33, 52, 105, 0.1), transparent);
+    transition: all 0.5s ease;
+}
+
+.service-accordion .accordion-item:hover::before {
+    left: 100%;
+}
+
+.service-accordion .accordion-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(33, 52, 105, 0.2),
+        0 0 20px rgba(33, 52, 105, 0.1);
+}
+
+/* AI Border Effect */
+.service-accordion .accordion-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, #213469, #4a6cf7, #213469);
+    background-size: 200% 100%;
+    animation: aiGradientShift 2s ease infinite;
+    transition: width 0.4s ease;
+}
+
+.service-accordion .accordion-item:hover::after,
+.service-accordion .accordion-item.show-ai-effect::after {
+    width: 100%;
+}
+
+@keyframes aiGradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .service-accordion .accordion-button {
@@ -94,8 +152,12 @@ h6 {
     display: flex;
     align-items: center;
     gap: 10px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
+/* AI Pulse Effect on Icon */
 .service-icon {
     /* width: 18px;
     height: 18px;
@@ -108,6 +170,100 @@ h6 {
     object-fit: cover;
     border: 1px solid #ddd;
     padding: 4px;
+    transition: all 0.4s ease;
+    animation: iconFloat 3s ease-in-out infinite;
+}
+
+@keyframes iconFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-3px);
+    }
+}
+
+.service-accordion .accordion-button:hover .service-icon {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 0 20px rgba(74, 108, 247, 0.4);
+    border-color: #4a6cf7;
+}
+
+/* AI Glow Ring Effect */
+.service-accordion .accordion-button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    padding: 2px;
+    background: linear-gradient(135deg, rgba(33, 52, 105, 0.3), rgba(74, 108, 247, 0.3));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.service-accordion .accordion-button:hover::before {
+    opacity: 1;
+}
+
+.service-accordion .accordion-button:not(.collapsed) .service-icon {
+    animation: iconPulse 1s ease-in-out infinite;
+    border-color: #4a6cf7;
+    box-shadow: 0 0 25px rgba(74, 108, 247, 0.5);
+}
+
+@keyframes iconPulse {
+
+    0%,
+    100% {
+        box-shadow: 0 0 15px rgba(74, 108, 247, 0.3);
+    }
+
+    50% {
+        box-shadow: 0 0 30px rgba(74, 108, 247, 0.6);
+    }
+}
+
+/* AI Ripple Effect */
+.ai-ripple {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background: rgba(74, 108, 247, 0.5);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: rippleExpand 0.6s ease-out forwards;
+    pointer-events: none;
+    z-index: 1;
+}
+
+@keyframes rippleExpand {
+    0% {
+        width: 10px;
+        height: 10px;
+        opacity: 1;
+    }
+
+    100% {
+        width: 300px;
+        height: 300px;
+        opacity: 0;
+    }
+}
+
+/* AI Activated State */
+.service-icon.ai-activated {
+    animation: iconPulse 1s ease-in-out infinite !important;
+    border-color: #4a6cf7 !important;
+    box-shadow: 0 0 25px rgba(74, 108, 247, 0.5) !important;
+    transform: scale(1.05);
 }
 
 .service-accordion .accordion-button:not(.collapsed) {
@@ -2482,7 +2638,7 @@ h6 {
 .benefit-card {
     transition: all 0.4s ease;
     border: none;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
     height: 100%;
     border-radius: 15px;
     background: #fff;
@@ -2490,7 +2646,7 @@ h6 {
 
 .benefit-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
 .benefit-icon-wrapper {
@@ -2632,14 +2788,14 @@ h6 {
     padding: 40px 30px;
     background: white;
     border-radius: 20px;
-    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
     height: 100%;
 }
 
 .step-item:hover {
     transform: translateY(-8px);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
 }
 
 .step-number {
@@ -2675,13 +2831,13 @@ h6 {
     border-radius: 15px;
     padding: 25px 30px;
     margin-bottom: 20px;
-    box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
     border-left: 4px solid #213469;
     transition: all 0.3s ease;
 }
 
 .faq-item:hover {
-    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .faq-item h5 {
@@ -2739,14 +2895,14 @@ h6 {
     padding: 35px 25px;
     border-radius: 20px;
     text-align: center;
-    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
     height: 100%;
 }
 
 .contact-info-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
 }
 
 .contact-info-card i {
@@ -2792,7 +2948,7 @@ h6 {
     .membership-hero {
         padding: 60px 0;
     }
-    
+
     .membership-hero h1 {
         font-size: 2.5rem;
     }
@@ -2802,11 +2958,11 @@ h6 {
     .membership-hero h1 {
         font-size: 2rem;
     }
-    
+
     .step-item {
         padding: 30px 20px;
     }
-    
+
     .membership-card .membership-title {
         font-size: 22px;
     }

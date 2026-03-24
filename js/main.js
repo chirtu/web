@@ -181,6 +181,30 @@
                 $('.back-to-top').fadeOut('slow');
             }
         });
+
+        // AI Effect for Service Accordion
+        $('.service-accordion').on('show.bs.collapse', function(e) {
+            var accordionItem = $(e.target).closest('.accordion-item');
+            accordionItem.addClass('show-ai-effect');
+            
+            // Add AI activation effect
+            accordionItem.find('.service-icon').addClass('ai-activated');
+            
+            // Create ripple effect
+            var ripple = document.createElement('div');
+            ripple.className = 'ai-ripple';
+            accordionItem.append(ripple);
+            
+            setTimeout(function() {
+                ripple.remove();
+            }, 600);
+        });
+
+        $('.service-accordion').on('hide.bs.collapse', function(e) {
+            var accordionItem = $(e.target).closest('.accordion-item');
+            accordionItem.removeClass('show-ai-effect');
+            accordionItem.find('.service-icon').removeClass('ai-activated');
+        });
     }
 
 })(jQuery);
