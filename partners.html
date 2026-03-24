@@ -16,7 +16,7 @@
         rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link rel="stylesheet" href="htts://use.fontawesome.com/releases/v5.15.4/css/all.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
@@ -28,157 +28,6 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-
-    <style>
-        /* Custom Styles for Partners Page */
-        .partners-header-section {
-            background: linear-gradient(135deg, #213469 0%, #0d6efd 100%);
-            padding: 100px 0 120px;
-            position: relative;
-        }
-
-        .partners-header-section::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 50px;
-            background: url("data:image/svg+xml,'%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffffff' d='M0,160L48,170.7C96,181,192,203,288,197.3C384,192,480,160,576,144C672,128,768,128,864,154.7C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E") no-repeat;
-            background-size: cover;
-        }
-
-        .partner-card {
-            background: white;
-            border-radius: 15px;
-            padding: 30px;
-            text-align: center;
-            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
-            transition: all 0.3s ease;
-            height: 100%;
-            border: 1px solid #eee;
-        }
-
-        .partner-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
-            border-color: #0d6efd;
-        }
-
-        .partner-logo-container {
-            width: 120px;
-            height: 120px;
-            margin: 0 auto 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #f8f9fa;
-            border-radius: 50%;
-            padding: 20px;
-        }
-
-        .partner-logo-container img {
-            max-width: 100%;
-            max-height: 80px;
-            filter: grayscale(100%);
-            transition: all 0.3s ease;
-        }
-
-        .partner-card:hover .partner-logo-container img {
-            filter: grayscale(0%);
-        }
-
-        .partner-card h4 {
-            color: #213469;
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
-
-        .partner-card p {
-            color: #6c757d;
-            font-size: 14px;
-            margin-bottom: 0;
-        }
-
-        .category-badge {
-            display: inline-block;
-            padding: 5px 15px;
-            background: #e7f1ff;
-            color: #0d6efd;
-            border-radius: 20px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 15px;
-        }
-
-        .stats-section {
-            background: linear-gradient(135deg, #213469 0%, #0d6efd 100%);
-            padding: 60px 0;
-            color: white;
-        }
-
-        .stat-item {
-            text-align: center;
-        }
-
-        .stat-item h2 {
-            font-size: 48px;
-            font-weight: 700;
-            margin-bottom: 5px;
-        }
-
-        .stat-item p {
-            font-size: 16px;
-            opacity: 0.9;
-        }
-
-        .why-partner-section {
-            padding: 80px 0;
-            background: #f8f9fa;
-        }
-
-        .benefit-card {
-            background: white;
-            border-radius: 15px;
-            padding: 30px;
-            text-align: center;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s ease;
-            height: 100%;
-        }
-
-        .benefit-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .benefit-icon {
-            width: 70px;
-            height: 70px;
-            background: linear-gradient(135deg, #213469 0%, #0d6efd 100%);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 20px;
-        }
-
-        .benefit-icon i {
-            font-size: 28px;
-            color: white;
-        }
-
-        .benefit-card h5 {
-            color: #213469;
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
-
-        .benefit-card p {
-            color: #6c757d;
-            font-size: 14px;
-            margin-bottom: 0;
-        }
-    </style>
 </head>
 
 <body>
@@ -357,217 +206,114 @@
     </div>
 
     <!-- Partners Grid Start -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5 bg-light">
         <div class="container py-5">
             <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
                 <h4 class="text-uppercase text-primary">Our Partners</h4>
                 <h1 class="text-capitalize mb-3">Trusted by Leading Institutions</h1>
-                <p class="mb-0">We work with top universities, research institutions, and organizations to provide
+                <p class="mb-0 text-muted">We work with top universities, research institutions, and organizations to
+                    provide
                     seamless connectivity and resources for Tanzania's academic community.</p>
             </div>
 
             <!-- Universities Section -->
             <div class="mb-5">
+                <h3 class="mb-4 text-center fw-bold">Universities</h3>
                 <div class="row g-4">
-                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="partner-card">
-                            <div class="partner-logo-container">
-                                <img src="img/partner1.png" alt="University of Dar es Salaam">
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="partner-card p-4 bg-white text-center h-100"
+                            style="border-radius: 20px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); transition: all 0.3s ease;">
+                            <div class="partner-logo-container mb-3">
+                                <img src="img/partner1.png" alt="University of Dar es Salaam" class="img-fluid"
+                                    style="max-height: 80px;">
                             </div>
-                            <h4>University of Dar es Salaam</h4>
+                            <h5 class="mb-0">University of Dar es Salaam</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="partner-card p-4 bg-white text-center h-100"
+                            style="border-radius: 20px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); transition: all 0.3s ease;">
+                            <div class="partner-logo-container mb-3">
+                                <img src="img/partner2.png" alt="Muhimbili University" class="img-fluid"
+                                    style="max-height: 80px;">
+                            </div>
+                            <h5 class="mb-0">Muhimbili University of Health and Allied Sciences</h5>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="partner-card">
-                            <div class="partner-logo-container">
-                                <img src="img/partner2.png" alt="Muhimbili University">
+                        <div class="partner-card p-4 bg-white text-center h-100"
+                            style="border-radius: 20px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); transition: all 0.3s ease;">
+                            <div class="partner-logo-container mb-3">
+                                <img src="img/partner1.png" alt="Mzumbe University" class="img-fluid"
+                                    style="max-height: 80px;">
                             </div>
-                            <h4>Muhimbili University of Health and Allied Sciences</h4>
+                            <h5 class="mb-0">Mzumbe University</h5>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="partner-card">
-                            <div class="partner-logo-container">
-                                <img src="img/partner1.png" alt="Mzumbe University">
+                        <div class="partner-card p-4 bg-white text-center h-100"
+                            style="border-radius: 20px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); transition: all 0.3s ease;">
+                            <div class="partner-logo-container mb-3">
+                                <img src="img/partner2.png" alt="Sokoine University" class="img-fluid"
+                                    style="max-height: 80px;">
                             </div>
-                            <h4>Mzumbe University</h4>
+                            <h5 class="mb-0">Sokoine University of Agriculture</h5>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="partner-card">
-                            <div class="partner-logo-container">
-                                <img src="img/partner2.png" alt="Sokoine University">
+                        <div class="partner-card p-4 bg-white text-center h-100"
+                            style="border-radius: 20px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); transition: all 0.3s ease;">
+                            <div class="partner-logo-container mb-3">
+                                <img src="img/partner1.png" alt="Nelson Mandela University" class="img-fluid"
+                                    style="max-height: 80px;">
                             </div>
-                            <h4>Sokoine University of Agriculture</h4>
+                            <h5 class="mb-0">Nelson Mandela African Institution</h5>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="partner-card">
-                            <div class="partner-logo-container">
-                                <img src="img/partner1.png" alt="Nelson Mandela University">
+                        <div class="partner-card p-4 bg-white text-center h-100"
+                            style="border-radius: 20px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); transition: all 0.3s ease;">
+                            <div class="partner-logo-container mb-3">
+                                <img src="img/partner2.png" alt="Mwanza University" class="img-fluid"
+                                    style="max-height: 80px;">
                             </div>
-                            <h4>Nelson Mandela African Institution</h4>
+                            <h5 class="mb-0">Mwanza University</h5>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="partner-card">
-                            <div class="partner-logo-container">
-                                <img src="img/partner2.png" alt="Mwanza University">
+                        <div class="partner-card p-4 bg-white text-center h-100"
+                            style="border-radius: 20px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); transition: all 0.3s ease;">
+                            <div class="partner-logo-container mb-3">
+                                <img src="img/partner1.png" alt="University of Dodoma" class="img-fluid"
+                                    style="max-height: 80px;">
                             </div>
-                            <h4>Mwanza University</h4>
+                            <h5 class="mb-0">University of Dodoma</h5>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="partner-card">
-                            <div class="partner-logo-container">
-                                <img src="img/partner1.png" alt="University of Dodoma">
+                        <div class="partner-card p-4 bg-white text-center h-100"
+                            style="border-radius: 20px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); transition: all 0.3s ease;">
+                            <div class="partner-logo-container mb-3">
+                                <img src="img/partner2.png" alt="St. Augustine University" class="img-fluid"
+                                    style="max-height: 80px;">
                             </div>
-                            <h4>University of Dodoma</h4>
+                            <h5 class="mb-0">St. Augustine University</h5>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.9s">
-                        <div class="partner-card">
-                            <div class="partner-logo-container">
-                                <img src="img/partner2.png" alt="St. Augustine University">
+                        <div class="partner-card p-4 bg-white text-center h-100"
+                            style="border-radius: 20px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); transition: all 0.3s ease;">
+                            <div class="partner-logo-container mb-3">
+                                <img src="img/partner1.png" alt="Mzumbe University Faculty of Law" class="img-fluid"
+                                    style="max-height: 80px;">
                             </div>
-                            <h4>St. Augustine University</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="1.0s">
-                        <div class="partner-card">
-                            <div class="partner-logo-container">
-                                <img src="img/partner1.png" alt="Mzumbe University Faculty of Law">
-                            </div>
-                            <h4>Mzumbe University - Faculty of Law</h4>
+                            <h5 class="mb-0">Mzumbe University</h5>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Research Institutions Section -->
-            <div class="mb-5">
-                <div class="row g-4">
-                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="partner-card">
-                            <div class="partner-logo-container">
-                                <img src="img/partner2.png" alt="NIMR">
-                            </div>
-                            <h4>National Institute for Medical Research</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="partner-card">
-                            <div class="partner-logo-container">
-                                <img src="img/partner1.png" alt="TAWIRI">
-                            </div>
-                            <h4>Tanzania Wildlife Research Institute</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="partner-card">
-                            <div class="partner-logo-container">
-                                <img src="img/partner2.png" alt="TIRDO">
-                            </div>
-                            <h4>Tanzania Industrial Research</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="partner-card">
-                            <div class="partner-logo-container">
-                                <img src="img/partner1.png" alt="STIPRO">
-                            </div>
-                            <h4>Science, Technology and Innovation Policy Research Organization (STIPRO)</h4>
-
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="partner-card">
-                            <div class="partner-logo-container">
-                                <img src="img/partner2.png" alt="CMHS">
-                            </div>
-                            <h4>Centre for Medical and Health Sciences</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="partner-card">
-                            <div class="partner-logo-container">
-                                <img src="img/partner1.png" alt="LITI">
-                            </div>
-                            <h4>Livestock Training and Research Institute</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- International Partners Section -->
-            <div>
-                <div class="row g-4">
-                    <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="partner-card">
-                            <div class="partner-logo-container">
-                                <img src="img/partner1.png" alt="Internet2">
-                            </div>
-                            <h4>Internet2</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="partner-card">
-                            <div class="partner-logo-container">
-                                <img src="img/partner2.png" alt="GEANT">
-                            </div>
-                            <h4>GEANT</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="partner-card">
-                            <div class="partner-logo-container">
-                                <img src="img/partner1.png" alt="UbuntuNet">
-                            </div>
-                            <h4>UbuntuNet Alliance</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="partner-card">
-                            <div class="partner-logo-container">
-                                <img src="img/partner2.png" alt="WACREN">
-                            </div>
-                            <h4>WACREN</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="partner-card">
-                            <div class="partner-logo-container">
-                                <img src="img/partner1.png" alt="eduroam">
-                            </div>
-                            <h4>eduroam</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="partner-card">
-                            <div class="partner-logo-container">
-                                <img src="img/partner2.png" alt="REFEDS">
-                            </div>
-                            <h4>REFEDS</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="partner-card">
-                            <div class="partner-logo-container">
-                                <img src="img/partner1.png" alt="GLIF">
-                            </div>
-                            <h4>Global Lambda Integrated Facility</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.9s">
-                        <div class="partner-card">
-                            <div class="partner-logo-container">
-                                <img src="img/partner2.png" alt="TF-CNRM">
-                            </div>
-                            <h4>TF-CNRM</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
+       
         </div>
     </div>
     <!-- Partners Grid End -->
