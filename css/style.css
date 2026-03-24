@@ -953,6 +953,47 @@ h6 {
 
 /*** Features End ***/
 
+/*** Partner Section Start ***/
+.partner-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.partner-section h1 {
+    font-weight: 700;
+    color: #213469;
+}
+
+.partner-logo {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.partner-logo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.partner-logo img {
+    max-height: 70px;
+    max-width: 100%;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.partner-logo:hover img {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+/*** Partner Section End ***/
+
 /*** About Start ***/
 .about .about-img {
     position: relative;
