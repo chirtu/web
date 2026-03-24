@@ -182,28 +182,35 @@
             }
         });
 
-        // AI Effect for Service Accordion
-        $('.service-accordion').on('show.bs.collapse', function(e) {
-            var accordionItem = $(e.target).closest('.accordion-item');
+        // AI Effect for Service Accordion - Trigger on click/touch
+        $('.service-accordion .accordion-button').on('click', function (e) {
+            var accordionItem = $(this).closest('.accordion-item');
+            var accordionBody = accordionItem.find('.accordion-collapse');
+
+            // Add AI activation effect immediately on click
             accordionItem.addClass('show-ai-effect');
-            
-            // Add AI activation effect
             accordionItem.find('.service-icon').addClass('ai-activated');
-            
+
             // Create ripple effect
             var ripple = document.createElement('div');
             ripple.className = 'ai-ripple';
             accordionItem.append(ripple);
-            
-            setTimeout(function() {
+
+            setTimeout(function () {
                 ripple.remove();
             }, 600);
         });
 
-        $('.service-accordion').on('hide.bs.collapse', function(e) {
+        // Handle collapse events
+        $('.service-accordion').on('shown.bs.collapse hidden.bs.collapse', function (e) {
             var accordionItem = $(e.target).closest('.accordion-item');
-            accordionItem.removeClass('show-ai-effect');
-            accordionItem.find('.service-icon').removeClass('ai-activated');
+            if (accordionItem.hasClass('show')) {
+                accordionItem.addClass('show-ai-effect');
+                accordionItem.find('.service-icon').addClass('ai-activated');
+            } else {
+                accordionItem.removeClass('show-ai-effect');
+                accordionItem.find('.service-icon').removeClass('ai-activated');
+            }
         });
     }
 
