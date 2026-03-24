@@ -35,21 +35,24 @@
     if (document.getElementById("particles-js")) {
         particlesJS("particles-js", {
             particles: {
-                number: { value: 100 },
+                number: { value: 80 },
                 color: { value: "#ffffff" },
                 shape: { type: "circle" },
-                opacity: { value: 0.5 },
-                size: { value: 3 },
+                opacity: { value: 0.6 },
+                size: { value: 4 },
                 line_linked: {
                     enable: true,
                     distance: 150,
                     color: "#ffffff",
-                    opacity: 0.4,
+                    opacity: 0.3,
                     width: 1
                 },
                 move: {
                     enable: true,
-                    speed: 2
+                    speed: 4,
+                    direction: "none",
+                    out_mode: "out",
+                    random: true
                 }
             },
             interactivity: {
@@ -60,12 +63,7 @@
                     }
                 },
                 modes: {
-                    move: { enable: true, speed: 3 },
-                    repulse: { distance: 220, duration: 0.6 }
-                    // repulse: {
-                    //     distance: 180,
-                    //     duration: 0.4
-                    // }
+                    repulse: { distance: 300, duration: 1.2 }
                 }
             },
             retina_detect: true
@@ -212,7 +210,72 @@
                 accordionItem.find('.service-icon').removeClass('ai-activated');
             }
         });
+
+
     }
+
+    // Carousel Particles Effect - Particles run away from cursor
+    if (document.getElementById('particles-carousel')) {
+        particlesJS('particles-carousel', {
+            particles: {
+                fps_limit: 60,
+                number: {
+                    value: 80,
+                    density: {
+                        enable: true,
+                        value_area: 800
+                    }
+                },
+                color: { value: "#ffffff" },
+                shape: { type: "circle" },
+                opacity: {
+                    value: 0.6,
+                    random: true
+                },
+                size: {
+                    value: 4,
+                    random: true
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: "#ffffff",
+                    opacity: 0.3,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 4,
+                    direction: "none",
+                    out_mode: "out",
+                    random: true
+                }
+            },
+            interactivity: {
+                detect_on: "window",
+                events: {
+                    onhover: {
+                        enable: true,
+                        mode: "repulse"
+                    },
+                    onclick: {
+                        enable: true,
+                        mode: "push"
+                    }, resize: true
+                },
+                modes: {
+                    repulse: { distance: 300, duration: 1.2 },
+                    push: { particles_nb: 4 }
+                }
+                // modes: {
+
+                //     repulse: { distance: 300, duration: 1.2 }
+                // }
+            },
+            retina_detect: true
+        });
+    }
+
 
 })(jQuery);
 

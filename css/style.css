@@ -46,15 +46,6 @@ body {
 }
 
 /* parcticle */
-/* #particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1;
-} */
-
 #particles-js {
     position: absolute;
     inset: 0;
@@ -271,6 +262,40 @@ h6 {
     position: relative;
     overflow: hidden;
     transition: all 0.4s ease;
+}
+
+/* Carousel Particles Overlay */
+#particles-carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.carousel-header {
+    position: relative;
+}
+
+.carousel-header .carousel-inner {
+    position: relative;
+}
+
+.carousel-header .carousel-inner .carousel-item {
+    position: relative;
+}
+
+.carousel-header .carousel-inner .carousel-item img {
+    position: relative;
+    z-index: 1;
+}
+
+.carousel-header .carousel-inner .carousel-item .carousel-caption-1,
+.carousel-header .carousel-inner .carousel-item .carousel-caption-2 {
+    position: absolute;
+    z-index: 11;
 }
 
 .event-card-ai::before {
@@ -685,6 +710,17 @@ h6 {
 .carousel-header {
     position: relative;
     overflow: hidden;
+    min-height: 500px;
+}
+
+#particles-carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    pointer-events: none;
 }
 
 .carousel-indicators {
